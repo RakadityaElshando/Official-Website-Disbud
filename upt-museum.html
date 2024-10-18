@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UPT Museum - Dinas Kebudayaan Provinsi Riau</title>
+    <link rel="shortcut icon" href="favicon.svg" type="image/x-icon" />
+
+    <!-- plugins & libraries css -->
+    <link rel="stylesheet" href="assets/vendor/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/vendor/font-awesome/all.min.css" />
+
+    <!-- tailwind css -->
+    <link rel="stylesheet" href="src/output.css" />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <div class="ed-overlay group">
+      <div
+        class="fixed inset-0 z-[100] group-[.active]:bg-edblue/80 duration-[400ms] pointer-events-none group-[.active]:pointer-events-auto"
+      ></div>
+    </div>
+    <!-- sidebar -->
+    <div class="ed-sidebar">
+      <div
+        class="translate-x-[100%] transition-transform ease-linear duration-300 fixed right-0 w-full max-w-[25%] xl:max-w-[30%] lg:max-w-[40%] md:max-w-[50%] sm:max-w-[60%] xxs:max-w-full bg-white h-full z-[100] overflow-auto"
+      >
+        <!-- heading -->
+        <div
+          class="ed-sidebar-heading p-[20px] lg:p-[20px] border-b border-edgray/20"
+        >
+          <div class="logo flex justify-between items-center">
+            <a href="index.html"
+              ><img src="assets/img/logo.png" alt="logo"
+            /></a>
+
+            <button
+              type="button"
+              class="ed-sidebar-close-btn border border-edgray/20 w-[45px] aspect-square shrink-0 text-black text-[22px] rounded-full hover:text-edgreen"
+            >
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- mobile menu -->
+        <div class="ed-header-nav-in-mobile"></div>
+      </div>
+    </div>
+    <!-- HEADER SECTION START -->
+    <header
+      class="bg-edyellow ed-header--2 relative z-[2] px-[7.9%] xxxxl:px-[6.5%] xxxl:px-[1%] lg:px-[15px] py-[25px] xxs:py-[16px] flex items-center justify-between to-be-fixed"
+    >
+      <div class="logo xxs:max-w-[40%]">
+        <a href="index.html" class="flex space-x-2">
+          <img
+            src="assets/img/image/logo-riau.png"
+            class="w-[50px]"
+            alt="logo-riau"
+          />
+          <img
+            src="assets/img/image/logo-disbud.png"
+            class="w-[50px]"
+            alt="logo-disbud"
+          />
+        </a>
+      </div>
+
+      <div class="flex lg:items-center lg:gap-[30px]">
+        <div
+          class="flex lg:flex-col items-center gap-[60px] xxl:gap-[25px] xl:gap-[30px] md:gap-y-[15px] bg"
+        >
+          <!-- nav -->
+          <ul
+            class="to-go-to-sidebar-in-mobile ed-header-nav flex lg:flex-col gap-x-[43px] xxl:gap-x-[33px] font-kanit text-[17px] font-normal"
+          >
+            <li><a href="index.html">Beranda</a></li>
+            <li class="has-sub-menu relative">
+              <a role="button">Profil</a>
+
+              <ul class="ed-header-submenu">
+                <li class="has-sub-menu relative">
+                  <a href="tentang-kami.html">Tentang Kami</a>
+                </li>
+                <li class="has-sub-menu relative">
+                  <a href="sejarah-singkat.html">Sejarah Singkat</a>
+                </li>
+                <li class="has-sub-menu relative">
+                  <a href="visi-misi.html">Visi Misi</a>
+                </li>
+                <li class="has-sub-menu relative">
+                  <a href="struktur-organisasi.html">Struktur Organisasi</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="has-sub-menu relative">
+              <a role="button">PPID</a>
+
+              <ul class="ed-header-submenu">
+                <li class="has-sub-menu relative">
+                  <a role="button">Profil PPID</a>
+                </li>
+              </ul>
+            </li>
+            <li class="has-sub-menu relative">
+              <a role="button">Informasi</a>
+
+              <ul class="ed-header-submenu">
+                <li>
+                  <a href="event-budaya.html">Event Budaya</a>
+                </li>
+                <li><a href="kegiatan-disbud.html">Kegiatan DISBUD</a></li>
+                <li><a href="upt-museum.html">UPT Museum</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="kontak.html">Kontak</a>
+            </li>
+          </ul>
+
+          <!-- right actions -->
+          <div
+            class="flex items-center gap-x-[60px] xxl:gap-x-[25px] lg:gap-x-[20px]"
+          >
+            <a
+              href="http://sitari.disbud.riau.go.id/"
+              class="ed-btn to-go-to-sidebar-in-mobile lg:m-[20px]"
+              >Si-Tari</a
+            >
+          </div>
+        </div>
+
+        <!-- mobile menu button -->
+        <button
+          type="button"
+          class="ed-mobile-menu-open-btn hidden lg:inline-block text-white text-[18px] hover:text-edyellow"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </header>
+    <!-- HEADER SECTION END -->
+
+    <main>
+      <!-- BREADCRUMB SECTION START -->
+      <section
+        class="pt-[327px] xl:pt-[287px] lg:pt-[237px] sm:pt-[200px] xxs:pt-[180px] pb-[158px] xl:pb-[118px] lg:pb-[98px] sm:pb-[68px] xs:pb-[48px] text-center bg-[url('../assets/img/breadcrumb-bg.jpg')] bg-no-repeat bg-cover bg-center relative z-[1] overflow-hidden before:absolute before:-z-[1] before:inset-0 before:bg-edblue/70 before:pointer-events-none"
+      >
+        <div
+          class="mx-[19.71%] xxxl:mx-[14.71%] xxl:mx-[9.71%] xl:mx-[5.71%] md:mx-[12px]"
+        >
+          <h1 class="font-semibold text-[clamp(35px,6vw,56px)] text-white">
+            UPT Museum
+          </h1>
+          <ul class="flex items-center justify-center gap-[10px] text-white">
+            <li><a href="index.html" class="text-edyellow">Beranda</a></li>
+            <li>
+              <span class="text-[12px]"
+                ><i class="fa-solid fa-angle-double-right"></i
+              ></span>
+            </li>
+            <li>UPT Museum</li>
+          </ul>
+        </div>
+
+        <div class="vectors">
+          <img
+            src="assets/img/breadcrumb-vector-1.svg"
+            alt="vector"
+            class="absolute -z-[1] pointer-events-none bottom-[34px] left-0 xl:left-auto xl:right-[90%]"
+          />
+          <img
+            src="assets/img/breadcrumb-vector-2.svg"
+            alt="vector"
+            class="absolute -z-[1] pointer-events-none bottom-0 right-0 xl:right-auto xl:left-[60%]"
+          />
+        </div>
+      </section>
+      <!-- BREADCRUMB SECTION END -->
+
+      <!-- ABOUT SECTION START -->
+      <section
+        class="ed-2-about bg-edoffwhite py-[120px] xl:py-[80px] md:py-[60px] relative z-[1] before:absolute before:inset-0 before:-z-[1] before:bg-[url('../assets/img/about-us-bg.png')] before:opacity-[5%] before:bg-no-repeat before:bg-cover before:bg-center before:mix-blend-multiply"
+      >
+        <div
+          class="mx-[19.7%] xxxl:mx-[14.7%] xxl:mx-[9.7%] xl:mx-[3.2%] md:mx-[15px]"
+        >
+          <div class="flex md:flex-col gap-x-[75px] gap-y-[30px]">
+            <!-- left -->
+            <div class="max-w-[46%] md:max-w-full grow shrink-0">
+              <div class="relative flex items-end">
+                <img
+                  src="assets/img/about-2-image-1.png"
+                  alt="About Image"
+                  class="border-[12px] border-white rounded-full"
+                />
+
+                <!-- video btn -->
+                <div
+                  class="relative shrink-0 -ml-[202px] lg:-ml-[262px] md:-ml-[202px] xs:-ml-[242px] -mb-[24px]"
+                >
+                  <img
+                    src="assets/img/about-2-image-2.png"
+                    alt="About Image"
+                    class="border-[8px] border-white rounded-full w-[292px] xs:w-[252px] aspect-square"
+                  />
+                  <a
+                    href="https://youtu.be/K88OhAy7x9c"
+                    data-fslightbox="gallery"
+                    class="flex items-center justify-center w-[60px] aspect-square bg-white rounded-full text-edyellow absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] before:border before:absolute before:top-[50%] before:-translate-y-[50%] before:left-[50%] before:-translate-x-[50%] before:w-[calc(100%+15px)] before:h-[calc(100%+15px)] before:rounded-full before:transition before:duration-[400ms] hover:bg-edgreen hover:text-white hover:before:border-edgreen"
+                    ><i class="fa-solid fa-play"></i
+                  ></a>
+                </div>
+
+                <!-- vectors -->
+                <div>
+                  <img
+                    src="assets/img/about-2-img-vector.svg"
+                    alt="vector"
+                    class="absolute pointer-events-none top-[60px] right-[65px] -z-[1]"
+                  />
+                  <img
+                    src="assets/img/about-2-img-vector-2.svg"
+                    alt="vector"
+                    class="absolute pointer-events-none -bottom-[30px] right-0 -z-[1] md:hidden"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- right -->
+            <div class="max-w-[54%] md:max-w-full">
+              <h6 class="ed-section-sub-title">Tentang Museum</h6>
+              <h2 class="ed-section-title mb-[6px]">
+                Pelestarian Budaya Riau
+                <span
+                  class="text-edgreen font-bold relative before:absolute before:left-0 before:top-[calc(100%-6px)] before:w-[137px] before:h-[14px] before:bg-[url('../assets/img/banner-2-title-vector.svg')] before:bg-[length:100%_100%]"
+                  >Museum Sang Nila Utama</span
+                >
+              </h2>
+              <p class="text-edgray mb-[34px]">
+                Museum Sang Nila Utama berkomitmen untuk melestarikan warisan
+                budaya Riau yang kaya. Kami mengundang masyarakat untuk ikut
+                serta dalam menjaga sejarah, seni, dan tradisi yang menjadi
+                bagian dari identitas kita.
+              </p>
+              <ul
+                class="ed-about-list font-medium text-[18px] text-edblue grid grid-cols-2 xxs:grid-cols-1 gap-[20px] xxs:gap-[15px] mb-[52px] *:pl-[40px] *:relative *:before:absolute *:before:left-0 *:before:-top-[3px] *:before:w-[30px] *:before:aspect-square *:before:border *:before:border-edgreen *:before:rounded-full *:before:bg-[url(../assets/img/icon/checkmark.svg)] *:before:bg-no-repeat *:before:bg-[length:15px_13px] *:before:bg-center"
+              >
+                <li>Pelestarian Budaya</li>
+                <li>Komunitas Budaya</li>
+                <li>Bimbingan Ahli</li>
+                <li>Informasi Budaya</li>
+              </ul>
+              <!-- <a href="#" class="ed-btn">know more</a> -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ABOUT SECTION END -->
+
+      <!-- EVENTS SECTION START -->
+      <section class="ed-2-events py-[120px] xl:py-[80px] md:py-[60px]">
+        <div
+          class="mx-[19.7%] xxxl:mx-[14.7%] xxl:mx-[9.7%] xl:mx-[3.2%] md:mx-[15px]"
+        >
+          <!-- heading -->
+          <div
+            class="flex flex-wrap items-end justify-between gap-x-[30px] gap-y-[15px] border-b border-[#002147]/15 pb-[32px] xxs:pb-[22px] mb-[40px] xxs:mb-[30px]"
+          >
+            <div class="left">
+              <h6 class="ed-section-sub-title">Event Museum</h6>
+              <h2 class="ed-section-title">Event Museum</h2>
+            </div>
+            <!-- nav -->
+            <div
+              class="ed-2-events-slider-nav flex gap-[15px] *:w-[40px] *:h-[40px] *:rounded-full *:border *:border-[#808080]/20 *:text-black *:text-[18px]"
+            >
+              <button
+                class="prev hover:bg-edgreen hover:border-edpubg-edgreen hover:text-white"
+              >
+                <i class="fa-solid fa-angle-left"></i>
+              </button>
+              <button
+                class="next hover:bg-edgreen hover:border-edpubg-edgreen hover:text-white"
+              >
+                <i class="fa-solid fa-angle-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- events slider -->
+          <div class="ed-2-events-slider swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide w-[50%]">
+                <div class="space-y-[30px]">
+                  <!-- single event -->
+                  <div
+                    class="bg-edoffwhite rounded-[20px] p-[30px] sm:p-[20px] flex lg:flex-col sm:flex-row xs:flex-col items-center lg:items-start sm:items-center xs:items-start gap-[30px] sm:gap-[20px]"
+                  >
+                    <!-- img -->
+                    <div class="relative">
+                      <img
+                        src="assets/img/event-4.jpg"
+                        alt="event cover"
+                        class="max-w-[215px] aspect-[215/203] object-cover rounded-[10px]"
+                      />
+                    </div>
+                    <!-- text -->
+                    <div>
+                      <div
+                        class="flex items-center gap-[10px] font-medium text-[#808080] mb-[6px]"
+                      >
+                        <span class="icon"
+                          ><img
+                            src="assets/img/icon/clock-fill-yellow.svg"
+                            alt="icon"
+                        /></span>
+                        <span>09:00 - 12:00</span>
+                      </div>
+                      <h5
+                        class="font-semibold text-[20px] text-edblue mb-[4px]"
+                      >
+                        <a
+                          href="detail-event-museum.html"
+                          class="hover:text-edgreen line-clamp-2"
+                          >Festival Sanggar Tari dan Budaya Riau</a
+                        >
+                      </h5>
+                      <p class="text-edgray mb-[15px] line-clamp-3">
+                        Festival ini menampilkan seni tari dan budaya Riau untuk
+                        melestarikan tradisi lokal.
+                      </p>
+                      <a
+                        href="#"
+                        class="font-medium text-edgreen flex items-center gap-[10px] hover:text-black"
+                        >Selengkapnya
+                        <span class="icon"
+                          ><i class="fa-solid fa-arrow-right-long"></i></span
+                      ></a>
+                    </div>
+                  </div>
+
+                  <!-- single event -->
+                  <div
+                    class="bg-edoffwhite rounded-[20px] p-[30px] sm:p-[20px] flex lg:flex-col sm:flex-row xs:flex-col items-center lg:items-start sm:items-center xs:items-start gap-[30px] sm:gap-[20px]"
+                  >
+                    <!-- img -->
+                    <div class="relative">
+                      <img
+                        src="assets/img/event-2.jpg"
+                        alt="event cover"
+                        class="max-w-[215px] aspect-[215/203] object-cover rounded-[10px]"
+                      />
+                    </div>
+                    <!-- text -->
+                    <div>
+                      <div
+                        class="flex items-center gap-[10px] font-medium text-[#808080] mb-[6px]"
+                      >
+                        <span class="icon"
+                          ><img
+                            src="assets/img/icon/clock-fill-yellow.svg"
+                            alt="icon"
+                        /></span>
+                        <span>11:00 - 13:30</span>
+                      </div>
+                      <h5
+                        class="font-semibold text-[20px] text-edblue mb-[4px]"
+                      >
+                        <a
+                          href="detail-event-museum.html"
+                          class="hover:text-edgreen line-clamp-2"
+                          >Riau Gelar Festival Seni Tari dan Budaya
+                          Tradisional</a
+                        >
+                      </h5>
+                      <p class="text-edgray mb-[15px] line-clamp-3">
+                        Sanggar-sanggar seni Riau bersaing menampilkan tarian
+                        dan budaya tradisional.
+                      </p>
+                      <a
+                        href="#"
+                        class="font-medium text-edgreen flex items-center gap-[10px] hover:text-black"
+                        >Read More
+                        <span class="icon"
+                          ><i class="fa-solid fa-arrow-right-long"></i></span
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide w-[50%]">
+                <div class="space-y-[30px]">
+                  <!-- single event -->
+                  <div
+                    class="bg-edoffwhite rounded-[20px] p-[30px] sm:p-[20px] flex lg:flex-col sm:flex-row xs:flex-col items-center lg:items-start sm:items-center xs:items-start gap-[30px] sm:gap-[20px]"
+                  >
+                    <!-- img -->
+                    <div class="relative">
+                      <img
+                        src="assets/img/event-3.jpg"
+                        alt="event cover"
+                        class="max-w-[215px] aspect-[215/203] object-cover rounded-[10px]"
+                      />
+                    </div>
+                    <!-- text -->
+                    <div>
+                      <div
+                        class="flex items-center gap-[10px] font-medium text-[#808080] mb-[6px]"
+                      >
+                        <span class="icon"
+                          ><img
+                            src="assets/img/icon/clock-fill-yellow.svg"
+                            alt="icon"
+                        /></span>
+                        <span>11:00 - 13:30</span>
+                      </div>
+                      <h5
+                        class="font-semibold text-[20px] text-edblue mb-[4px]"
+                      >
+                        <a
+                          href="detail-event-museum.html"
+                          class="hover:text-edgreen line-clamp-2"
+                          >Ajang Seni dan Budaya Riau Disemarakkan oleh Sanggar
+                          Tari</a
+                        >
+                      </h5>
+                      <p class="text-edgray mb-[15px] line-clamp-3">
+                        Acara ini meriahkan budaya Riau dengan pagelaran seni
+                        tari tradisional.
+                      </p>
+                      <a
+                        href="#"
+                        class="font-medium text-edgreen flex items-center gap-[10px] hover:text-black"
+                        >Read More
+                        <span class="icon"
+                          ><i class="fa-solid fa-arrow-right-long"></i></span
+                      ></a>
+                    </div>
+                  </div>
+
+                  <!-- single event -->
+                  <div
+                    class="bg-edoffwhite rounded-[20px] p-[30px] sm:p-[20px] flex lg:flex-col sm:flex-row xs:flex-col items-center lg:items-start sm:items-center xs:items-start gap-[30px] sm:gap-[20px]"
+                  >
+                    <!-- img -->
+                    <div class="relative">
+                      <img
+                        src="assets/img/event-1.jpg"
+                        alt="event cover"
+                        class="max-w-[215px] aspect-[215/203] object-cover rounded-[10px]"
+                      />
+                    </div>
+                    <!-- text -->
+                    <div>
+                      <div
+                        class="flex items-center gap-[10px] font-medium text-[#808080] mb-[6px]"
+                      >
+                        <span class="icon"
+                          ><img
+                            src="assets/img/icon/clock-fill-yellow.svg"
+                            alt="icon"
+                        /></span>
+                        <span>11:00 - 13:30</span>
+                      </div>
+                      <h5
+                        class="font-semibold text-[20px] text-edblue mb-[4px]"
+                      >
+                        <a
+                          href="detail-event-museum.html"
+                          class="hover:text-edgreen line-clamp-2"
+                          >Perayaan Budaya Riau: Festival Seni Tari dan Tradisi
+                          Lokal</a
+                        >
+                      </h5>
+                      <p class="text-edgray mb-[15px] line-clamp-3">
+                        Sanggar tari Riau tampil di ajang budaya untuk
+                        melestarikan seni daerah.
+                      </p>
+                      <a
+                        href="#"
+                        class="font-medium text-edgreen flex items-center gap-[10px] hover:text-black"
+                        >Read More
+                        <span class="icon"
+                          ><i class="fa-solid fa-arrow-right-long"></i></span
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide w-[50%]">
+                <div class="space-y-[30px]">
+                  <!-- single event -->
+                  <div
+                    class="bg-edoffwhite rounded-[20px] p-[30px] sm:p-[20px] flex lg:flex-col sm:flex-row xs:flex-col items-center lg:items-start sm:items-center xs:items-start gap-[30px] sm:gap-[20px]"
+                  >
+                    <!-- img -->
+                    <div class="relative">
+                      <img
+                        src="assets/img/event-4.jpg"
+                        alt="event cover"
+                        class="max-w-[215px] aspect-[215/203] object-cover rounded-[10px]"
+                      />
+                    </div>
+                    <!-- text -->
+                    <div>
+                      <div
+                        class="flex items-center gap-[10px] font-medium text-[#808080] mb-[6px]"
+                      >
+                        <span class="icon"
+                          ><img
+                            src="assets/img/icon/clock-fill-yellow.svg"
+                            alt="icon"
+                        /></span>
+                        <span>11:00 - 13:30</span>
+                      </div>
+                      <h5
+                        class="font-semibold text-[20px] text-edblue mb-[4px]"
+                      >
+                        <a
+                          href="detail-event-museum.html"
+                          class="hover:text-edgreen line-clamp-2"
+                          >Riau Sambut Festival Budaya dengan Pagelaran Tari
+                          Tradisional</a
+                        >
+                      </h5>
+                      <p class="text-edgray mb-[15px] line-clamp-3">
+                        Festival ini menghadirkan sanggar tari Riau untuk
+                        melestarikan seni lokal.
+                      </p>
+                      <a
+                        href="#"
+                        class="font-medium text-edgreen flex items-center gap-[10px] hover:text-black"
+                        >Read More
+                        <span class="icon"
+                          ><i class="fa-solid fa-arrow-right-long"></i></span
+                      ></a>
+                    </div>
+                  </div>
+
+                  <!-- single event -->
+                  <div
+                    class="bg-edoffwhite rounded-[20px] p-[30px] sm:p-[20px] flex lg:flex-col sm:flex-row xs:flex-col items-center lg:items-start sm:items-center xs:items-start gap-[30px] sm:gap-[20px]"
+                  >
+                    <!-- img -->
+                    <div class="relative">
+                      <img
+                        src="assets/img/event-2.jpg"
+                        alt="event cover"
+                        class="max-w-[215px] aspect-[215/203] object-cover rounded-[10px]"
+                      />
+                    </div>
+                    <!-- text -->
+                    <div>
+                      <div
+                        class="flex items-center gap-[10px] font-medium text-[#808080] mb-[6px]"
+                      >
+                        <span class="icon"
+                          ><img
+                            src="assets/img/icon/clock-fill-yellow.svg"
+                            alt="icon"
+                        /></span>
+                        <span>11:00 - 13:30</span>
+                      </div>
+                      <h5
+                        class="font-semibold text-[20px] text-edblue mb-[4px]"
+                      >
+                        <a
+                          href="detail-event-museum.html"
+                          class="hover:text-edgreen line-clamp-2"
+                          >Festival Tari dan Budaya Riau: Wadah Ekspresi Seni
+                          Lokal</a
+                        >
+                      </h5>
+                      <p class="text-edgray mb-[15px] line-clamp-3">
+                        Festival mendukung pelestarian budaya Riau dengan
+                        penampilan sanggar tari.
+                      </p>
+                      <a
+                        href="#"
+                        class="font-medium text-edgreen flex items-center gap-[10px] hover:text-black"
+                        >Read More
+                        <span class="icon"
+                          ><i class="fa-solid fa-arrow-right-long"></i></span
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- EVENTS SECTION END -->
+
+      <!-- CTA SECTION START -->
+      <section
+        class="ed-2-cta overflow-hidden bg-edgreen pt-[15px] md:pt-[40px] relative z-[1] before:absolute before:inset-0 before:bg-[url(../assets/img/cta-2-vector.png)] before:bg-center before:bg-no-repeat before:bg-cover before:-z-[1]"
+      >
+        <div
+          class="mx-[19.7%] xxxl:mx-[14.7%] xxl:mx-[9.7%] xl:mx-[3.2%] md:mx-[15px]"
+        >
+          <div
+            class="flex md:flex-col gap-y-[15px] items-center justify-between"
+          >
+            <!-- text -->
+            <div class="max-w-[600px] md:max-w-full shrink-0 relative">
+              <h3
+                class="font-semibold text-[36px] sm:text-[32px] xxs:text-[28px] text-white leading-[1.4] mb-[41px] xxs:mb-[31px]"
+              >
+                Klasifikasi Filologi
+              </h3>
+              <!-- <p class="text-gray-50">menyajikan virtual tour dan informasi cgara budaya</p> -->
+              <a
+                href="klasifikasi-filologi.html"
+                class="ed-btn !h-[56px] !bg-white !text-black gap-[10px] hover:!bg-edyellow hover:!text-edblue"
+                >Kunjungi
+                <span class="icon"
+                  ><i class="fa-solid fa-arrow-right-long"></i></span
+              ></a>
+
+              <!-- vector -->
+              <img
+                src="assets/img/cta-2-txt-vector.svg"
+                alt="vector"
+                class="absolute bottom-[10px] left-[55%] xs:left-[75%]"
+              />
+            </div>
+
+            <!-- image -->
+            <div class="mr-[40px] lg:mr-0 relative z-[1] shrink-0">
+              <img src="assets/img/cta-2-img.png" alt="image" />
+              <!-- vector -->
+              <div
+                class="aspect-square w-[386px] border-[57px] border-edyellow rounded-full absolute bottom-0 right-[25%] translate-y-[50%] -z-[1]"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- CTA SECTION END -->
+
+      <!-- NEWS SECTION START -->
+      <section class="py-[120px] xl:py-[80px] md:py-[60px]">
+        <div
+          class="mx-[19.7%] xxxl:mx-[14.7%] xxl:mx-[9.7%] xl:mx-[3.2%] md:mx-[15px]"
+        >
+          <!-- heading -->
+          <div
+            class="flex flex-wrap items-end justify-between mb-[60px] lg:mb-[40px] gap-[15px]"
+          >
+            <!-- left -->
+            <div class="max-w-[35%] md:max-w-[40%] sm:max-w-none">
+              <h6 class="ed-section-sub-title">Berita Kegiatan</h6>
+              <h2 class="ed-section-title">UPT Museum</h2>
+            </div>
+
+            <!-- right -->
+            <a
+              href="kegiatan-museum.html"
+              class="ed-btn !h-[56px] gap-[10px] border border-[#E5E5E5] !bg-transparent !text-edgreen hover:!bg-edgreen hover:!border-edgreen hover:!text-white"
+              >Selengkapnya
+              <span><i class="fa-solid fa-arrow-right-long"></i></span
+            ></a>
+          </div>
+
+          <!-- news cards -->
+          <div class="grid grid-cols-2 md:grid-cols-1 gap-[30px]">
+            <!-- news big card -->
+            <div class="rounded-[20px] bg-edoffwhite overflow-hidden">
+              <!-- img -->
+              <div class="relative">
+                <img
+                  src="assets/img/blog-big.jpg"
+                  alt="blog cover"
+                  class="w-full aspect-[570/290]"
+                />
+                <!-- date -->
+                <div
+                  class="absolute top-[30px] left-[30px] bg-[#ECF0F5] rounded-[10px] font-medium text-[14px] text-black inline-block uppercase overflow-hidden text-center"
+                >
+                  <span
+                    class="bg-edgreen text-white block py-[3px] rounded-[10px]"
+                    >10</span
+                  >
+                  <span class="px-[11px] py-[2px] block">June</span>
+                </div>
+              </div>
+
+              <!-- txt -->
+              <div class="px-[30px] xxs:px-[20px] py-[22px] pt-[27px]">
+                <!-- infos -->
+                <div class="flex items-center gap-[16px] mb-[9px]">
+                  <!-- single info -->
+                  <div
+                    class="flex items-center gap-[10px] font-medium text-[12px] text-edgray"
+                  >
+                    <span
+                      ><img
+                        src="assets/img/icon/user-filled-purple.svg"
+                        alt="icon"
+                    /></span>
+                    <span>Admin Disbud</span>
+                  </div>
+                </div>
+                <h5 class="font-medium text-[20px]">
+                  <a
+                    href="detail-kegiatan-museum.html"
+                    class="hover:text-edgreen line-clamp-2"
+                    >Disbud Adakan Workshop Seni dan Budaya untuk Generasi
+                    Muda</a
+                  >
+                </h5>
+              </div>
+            </div>
+
+            <!-- right / news small cards -->
+            <div
+              class="bg-edoffwhite rounded-[20px] p-[30px] xxs:p-[20px] space-y-[26px]"
+            >
+              <!-- single news -->
+              <div
+                class="flex xxs:flex-col gap-x-[25px] gap-y-[15px] items-center xxs:items-start border-b last:border-0 pb-[26px] last:pb-0"
+              >
+                <!-- img -->
+                <div class="shrink-0 rounded-[10px] overflow-hidden">
+                  <img
+                    src="assets/img/news-2-img-2.jpg"
+                    alt="blog cover"
+                    class="w-[142px] aspect-[142/153] object-cover"
+                  />
+                </div>
+
+                <!-- txt -->
+                <div>
+                  <!-- infos -->
+                  <div class="flex items-center gap-[16px] mb-[9px]">
+                    <!-- single info -->
+                    <div
+                      class="flex items-center gap-[10px] font-medium text-[12px] text-edgray"
+                    >
+                      <span
+                        ><img
+                          src="assets/img/icon/user-filled-purple.svg"
+                          alt="icon"
+                      /></span>
+                      <span>Admin Disbud</span>
+                    </div>
+                  </div>
+                  <h5 class="font-medium text-[20px] mb-[17px]">
+                    <a
+                      href="detail-kegiatan-museum.html"
+                      class="hover:text-edgreen line-clamp-2"
+                      >Disbud Riau Gelar Festival Seni dan Budaya Tradisional</a
+                    >
+                  </h5>
+
+                  <!-- date -->
+                  <div
+                    class="bg-[#ECF0F5] rounded-[10px] font-medium text-[14px] text-black inline-block uppercase overflow-hidden text-center"
+                  >
+                    <span
+                      class="bg-edgreen text-white block py-[3px] rounded-[10px]"
+                      >10</span
+                    >
+                    <span class="px-[11px] py-[2px] block">June</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- single news -->
+              <div
+                class="flex xxs:flex-col gap-x-[25px] gap-y-[15px] items-center xxs:items-start border-b last:border-0 pb-[26px] last:pb-0"
+              >
+                <!-- img -->
+                <div class="shrink-0 rounded-[10px] overflow-hidden">
+                  <img
+                    src="assets/img/news-2-img-3.jpg"
+                    alt="blog cover"
+                    class="w-[142px] aspect-[142/153] object-cover"
+                  />
+                </div>
+
+                <!-- txt -->
+                <div>
+                  <!-- infos -->
+                  <div class="flex items-center gap-[16px] mb-[9px]">
+                    <!-- single info -->
+                    <div
+                      class="flex items-center gap-[10px] font-medium text-[12px] text-edgray"
+                    >
+                      <span
+                        ><img
+                          src="assets/img/icon/user-filled-purple.svg"
+                          alt="icon"
+                      /></span>
+                      <span>Admin Disbud</span>
+                    </div>
+                  </div>
+                  <h5 class="font-medium text-[20px] mb-[17px]">
+                    <a
+                      href="detail-kegiatan-museum.html"
+                      class="hover:text-edgreen line-clamp-2"
+                      >Disbud Luncurkan Program Pelestarian Budaya Lokal</a
+                    >
+                  </h5>
+
+                  <!-- date -->
+                  <div
+                    class="bg-[#ECF0F5] rounded-[10px] font-medium text-[14px] text-black inline-block uppercase overflow-hidden text-center"
+                  >
+                    <span
+                      class="bg-edgreen text-white block py-[3px] rounded-[10px]"
+                      >10</span
+                    >
+                    <span class="px-[11px] py-[2px] block">June</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- NEWS SECTION END -->
+    </main>
+
+    <!-- FOOTER SECTION START -->
+    <footer
+      style="background-color: black"
+      class="relative z-[1] before:absolute before:inset-0 before:-z-[1] before:bg-[url('../assets/img/footer-bg.jpg')] before:opacity-[7%] before:bg-no-repeat before:bg-cover before:bg-center text-white"
+    >
+      <div
+        class="mx-[19.71%] xxxl:mx-[14.71%] xxl:mx-[9.71%] xl:mx-[5.71%] md:mx-[12px]"
+      >
+        <!-- footer top -->
+        <div
+          class="flex flex-wrap justify-between gap-[35px] pt-[100px] pb-[58px] border-b border-white/20"
+        >
+          <!-- footer about -->
+          <div class="max-w-[370px] xxs:max-w-full">
+            <a href="index.html" class="mb-[23px] flex space-x-2">
+              <img
+                src="assets/img/image/logo-riau.png"
+                class="w-[50px]"
+                alt="logo-riau"
+              />
+              <img
+                src="assets/img/image/logo-disbud.png"
+                class="w-[50px]"
+                alt="logo-disbud"
+              />
+            </a>
+            <p class="text-[#D9D9D9] mb-[19px]">
+              Dinas Kebudayaan Provinsi Riau
+            </p>
+
+            <ul class="space-y-[17px]">
+              <li class="flex items-center gap-[8px]">
+                <span class="icon"
+                  ><img src="assets/img/call-icon-yellow.svg" alt="icon"
+                /></span>
+                <a href="tel:+6108-666-0112" class="hover:text-edyellow"
+                  >0812-3456-7890</a
+                >
+              </li>
+
+              <li class="flex items-center gap-[8px]">
+                <span class="icon"
+                  ><img src="assets/img/message-yellow.svg" alt="icon"
+                /></span>
+                <a href="mailto:info@gmail.com" class="hover:text-edyellow"
+                  >disbud@gmail.com</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- footer sitemap -->
+          <div>
+            <h6
+              class="font-semibold text-[18px] pb-[15px] mb-[30px] relative before:absolute before:bottom-0 before:left-0 before:h-[1.5px] before:w-[20px] before:bg-edyellow after:absolute after:bottom-0 after:left-[30px] after:h-[1.5px] after:w-[63px] after:bg-white"
+            >
+              Sitemap
+            </h6>
+
+            <div class="space-y-[18px]">
+              <a
+                href="#"
+                class="flex items-center gap-[10px] opacity-80 hover:text-edyellow"
+                ><span class="icon"
+                  ><img src="assets/img/double-arrow.svg" alt="icon"
+                /></span>
+                Beranda</a
+              >
+              <a
+                href="tentang-kami.html"
+                class="flex items-center gap-[10px] opacity-80 hover:text-edyellow"
+                ><span class="icon"
+                  ><img src="assets/img/double-arrow.svg" alt="icon"
+                /></span>
+                Tentang Kami</a
+              >
+              <a
+                href="detail-event-museum.html"
+                class="flex items-center gap-[10px] opacity-80 hover:text-edyellow"
+                ><span class="icon"
+                  ><img src="assets/img/double-arrow.svg" alt="icon"
+                /></span>
+                Event Budaya</a
+              >
+              <a
+                href="kegiatan-disbud.html"
+                class="flex items-center gap-[10px] opacity-80 hover:text-edyellow"
+                ><span class="icon"
+                  ><img src="assets/img/double-arrow.svg" alt="icon"
+                /></span>
+                Kegiatan Disbud</a
+              >
+              <a
+                href="upt-museum.html"
+                class="flex items-center gap-[10px] opacity-80 hover:text-edyellow"
+                ><span class="icon"
+                  ><img src="assets/img/double-arrow.svg" alt="icon"
+                /></span>
+                UPT Museum</a
+              >
+            </div>
+          </div>
+
+          <!-- footer si-tari -->
+          <div class="max-w-[300px]">
+            <h6
+              class="font-semibold text-[18px] pb-[15px] mb-[30px] relative before:absolute before:bottom-0 before:left-0 before:h-[1.5px] before:w-[20px] before:bg-edyellow after:absolute after:bottom-0 after:left-[30px] after:h-[1.5px] after:w-[63px] after:bg-white"
+            >
+              SI-TARI
+            </h6>
+            <div
+              class="flex items-center gap-x-[60px] xxl:gap-x-[25px] lg:gap-x-[20px]"
+            >
+              <a
+                href="http://sitari.disbud.riau.go.id/"
+                class="ed-btn to-go-to-sidebar-in-mobile lg:m-[20px]"
+                >Si-Tari</a
+              >
+            </div>
+            <!-- footer si-tari -->
+            <div>
+              <!-- social links -->
+              <div class="flex gap-[20px] mt-[30px]">
+                <span
+                  class="pl-[30px] font-medium text-[#d9d9d9] relative before:absolute before:left-0 before:top-[50%] before:-translate-y-[50%] before:h-[1px] before:w-[20px] before:bg-[#d9d9d9]"
+                  >Ikuti Kami</span
+                >
+                <span class="inline-flex gap-[16px] text-[#d9d9d9]">
+                  <a href="#" class="hover:text-edyellow"
+                    ><i class="fa-brands fa-facebook-f"></i
+                  ></a>
+                  <a href="#" class="hover:text-edyellow"
+                    ><i class="fa-brands fa-x-twitter"></i
+                  ></a>
+                  <a href="#" class="hover:text-edyellow"
+                    ><i class="fa-brands fa-linkedin-in"></i
+                  ></a>
+                  <a href="#" class="hover:text-edyellow"
+                    ><i class="fa-brands fa-youtube"></i
+                  ></a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- footer bottom -->
+        <div
+          class="flex flex-wrap items-center justify-between gap-[15px] pt-[20px] pb-[50px] text-[#d9d9d9]"
+        >
+          <p>&copy; All Copyright 2024 by Edutics</p>
+
+          <div class="flex flex-wrap gap-[40px] xxs:gap-[15px]">
+            <a href="#" class="hover:text-edyellow">Terms & Conditions</a>
+            <a href="#" class="hover:text-edyellow">Privacy Policy</a>
+          </div>
+        </div>
+        <!-- footer bottom -->
+      </div>
+    </footer>
+    <!-- FOOTER SECTION END -->
+
+    <!-- js -->
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/fslightbox/fslightbox.js"></script>
+    <script src="assets/vendor/mixitup/mixitup.min.js"></script>
+    <script src="assets/vendor/slim-select/slimselect.min.js"></script>
+
+    <script src="assets/js/main.js"></script>
+    <!-- <script src="assets/js/header-2.js"></script> -->
+    <script src="assets/js/accordion.js"></script>
+  </body>
+</html>

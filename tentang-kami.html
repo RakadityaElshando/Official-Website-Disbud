@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tentang Kami - Dinas Kebudayaan Provinsi Riau</title>
+    <link rel="shortcut icon" href="favicon.svg" type="image/x-icon" />
+
+    <!-- plugins & libraries css -->
+    <link rel="stylesheet" href="assets/vendor/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/vendor/font-awesome/all.min.css" />
+
+    <!-- tailwind css -->
+    <link rel="stylesheet" href="src/output.css" />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <div class="ed-overlay group">
+      <div
+        class="fixed inset-0 z-[100] group-[.active]:bg-edblue/80 duration-[400ms] pointer-events-none group-[.active]:pointer-events-auto"
+      ></div>
+    </div>
+    <!-- sidebar -->
+    <div class="ed-sidebar">
+      <div
+        class="translate-x-[100%] transition-transform ease-linear duration-300 fixed right-0 w-full max-w-[25%] xl:max-w-[30%] lg:max-w-[40%] md:max-w-[50%] sm:max-w-[60%] xxs:max-w-full bg-white h-full z-[100] overflow-auto"
+      >
+        <!-- heading -->
+        <div
+          class="ed-sidebar-heading p-[20px] lg:p-[20px] border-b border-edgray/20"
+        >
+          <div class="logo flex justify-between items-center">
+            <a href="index.html"
+              ><img src="assets/img/logo.png" alt="logo"
+            /></a>
+
+            <button
+              type="button"
+              class="ed-sidebar-close-btn border border-edgray/20 w-[45px] aspect-square shrink-0 text-black text-[22px] rounded-full hover:text-edgreen"
+            >
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- mobile menu -->
+        <div class="ed-header-nav-in-mobile"></div>
+      </div>
+    </div>
+    <!-- HEADER SECTION START -->
+    <header
+      class="bg-edyellow ed-header--2 relative z-[2] px-[7.9%] xxxxl:px-[6.5%] xxxl:px-[1%] lg:px-[15px] py-[25px] xxs:py-[16px] flex items-center justify-between to-be-fixed"
+    >
+      <div class="logo xxs:max-w-[40%]">
+        <a href="index.html" class="flex space-x-2">
+          <img
+            src="assets/img/image/logo-riau.png"
+            class="w-[50px]"
+            alt="logo-riau"
+          />
+          <img
+            src="assets/img/image/logo-disbud.png"
+            class="w-[50px]"
+            alt="logo-disbud"
+          />
+        </a>
+      </div>
+
+      <div class="flex lg:items-center lg:gap-[30px]">
+        <div
+          class="flex lg:flex-col items-center gap-[60px] xxl:gap-[25px] xl:gap-[30px] md:gap-y-[15px] bg"
+        >
+          <!-- nav -->
+          <ul
+            class="to-go-to-sidebar-in-mobile ed-header-nav flex lg:flex-col gap-x-[43px] xxl:gap-x-[33px] font-kanit text-[17px] font-normal"
+          >
+            <li><a href="index.html">Beranda</a></li>
+            <li class="has-sub-menu relative">
+              <a role="button">Profil</a>
+
+              <ul class="ed-header-submenu">
+                <li class="has-sub-menu relative">
+                  <a href="tentang-kami.html">Tentang Kami</a>
+                </li>
+                <li class="has-sub-menu relative">
+                  <a href="sejarah-singkat.html">Sejarah Singkat</a>
+                </li>
+                <li class="has-sub-menu relative">
+                  <a href="visi-misi.html">Visi Misi</a>
+                </li>
+                <li class="has-sub-menu relative">
+                  <a href="struktur-organisasi.html">Struktur Organisasi</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="has-sub-menu relative">
+              <a role="button">PPID</a>
+
+              <ul class="ed-header-submenu">
+                <li class="has-sub-menu relative">
+                  <a role="button">Profil PPID</a>
+                </li>
+              </ul>
+            </li>
+            <li class="has-sub-menu relative">
+              <a role="button">Informasi</a>
+
+              <ul class="ed-header-submenu">
+                <li>
+                  <a href="event-budaya.html">Event Budaya</a>
+                </li>
+                <li><a href="kegiatan-disbud.html">Kegiatan DISBUD</a></li>
+                <li><a href="upt-museum.html">UPT Museum</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="kontak.html">Kontak</a>
+            </li>
+          </ul>
+
+          <!-- right actions -->
+          <div
+            class="flex items-center gap-x-[60px] xxl:gap-x-[25px] lg:gap-x-[20px]"
+          >
+            <a
+              href="http://sitari.disbud.riau.go.id/"
+              class="ed-btn to-go-to-sidebar-in-mobile lg:m-[20px]"
+              >Si-Tari</a
+            >
+          </div>
+        </div>
+
+        <!-- mobile menu button -->
+        <button
+          type="button"
+          class="ed-mobile-menu-open-btn hidden lg:inline-block text-white text-[18px] hover:text-edyellow"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </header>
+    <!-- HEADER SECTION END -->
+
+    <main>
+      <!-- BREADCRUMB SECTION START -->
+      <section
+        class="pt-[327px] xl:pt-[287px] lg:pt-[237px] sm:pt-[200px] xxs:pt-[180px] pb-[158px] xl:pb-[118px] lg:pb-[98px] sm:pb-[68px] xs:pb-[48px] text-center bg-[url('../assets/img/breadcrumb-bg.jpg')] bg-no-repeat bg-cover bg-center relative z-[1] overflow-hidden before:absolute before:-z-[1] before:inset-0 before:bg-edblue/70 before:pointer-events-none"
+      >
+        <div
+          class="mx-[19.71%] xxxl:mx-[14.71%] xxl:mx-[9.71%] xl:mx-[5.71%] md:mx-[12px]"
+        >
+          <h1 class="font-semibold text-[clamp(35px,6vw,56px)] text-white">
+            Tentang Kami
+          </h1>
+          <ul class="flex items-center justify-center gap-[10px] text-white">
+            <li><a href="index.html" class="text-edyellow">Beranda</a></li>
+            <li>
+              <span class="text-[12px]"
+                ><i class="fa-solid fa-angle-double-right"></i
+              ></span>
+            </li>
+            <li>Tentang Kami</li>
+          </ul>
+        </div>
+
+        <div class="vectors">
+          <img
+            src="assets/img/breadcrumb-vector-1.svg"
+            alt="vector"
+            class="absolute -z-[1] pointer-events-none bottom-[34px] left-0 xl:left-auto xl:right-[90%]"
+          />
+          <img
+            src="assets/img/breadcrumb-vector-2.svg"
+            alt="vector"
+            class="absolute -z-[1] pointer-events-none bottom-0 right-0 xl:right-auto xl:left-[60%]"
+          />
+        </div>
+      </section>
+      <!-- BREADCRUMB SECTION END -->
+
+      <!-- ABOUT SECTION START -->
+      <section
+        class="ed-2-about bg-edoffwhite py-[120px] xl:py-[80px] md:py-[60px] relative z-[1] before:absolute before:inset-0 before:-z-[1] before:bg-[url('../assets/img/about-us-bg.png')] before:opacity-[5%] before:bg-no-repeat before:bg-cover before:bg-center before:mix-blend-multiply"
+      >
+        <div
+          class="mx-[19.7%] xxxl:mx-[14.7%] xxl:mx-[9.7%] xl:mx-[3.2%] md:mx-[15px]"
+        >
+          <div class="flex md:flex-col gap-x-[75px] gap-y-[30px]">
+            <!-- left -->
+            <div class="max-w-[46%] md:max-w-full grow shrink-0">
+              <div class="relative flex items-end">
+                <img
+                  src="assets/img/about-2-image-1.png"
+                  alt="About Image"
+                  class="border-[12px] border-white rounded-full"
+                />
+
+                <!-- video btn -->
+                <div
+                  class="relative shrink-0 -ml-[202px] lg:-ml-[262px] md:-ml-[202px] xs:-ml-[242px] -mb-[24px]"
+                >
+                  <img
+                    src="assets/img/about-2-image-2.png"
+                    alt="About Image"
+                    class="border-[8px] border-white rounded-full w-[292px] xs:w-[252px] aspect-square"
+                  />
+                  <a
+                    href="https://youtu.be/K88OhAy7x9c"
+                    data-fslightbox="gallery"
+                    class="flex items-center justify-center w-[60px] aspect-square bg-white rounded-full text-edyellow absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] before:border before:absolute before:top-[50%] before:-translate-y-[50%] before:left-[50%] before:-translate-x-[50%] before:w-[calc(100%+15px)] before:h-[calc(100%+15px)] before:rounded-full before:transition before:duration-[400ms] hover:bg-edgreen hover:text-white hover:before:border-edgreen"
+                    ><i class="fa-solid fa-play"></i
+                  ></a>
+                </div>
+
+                <!-- vectors -->
+                <div>
+                  <img
+                    src="assets/img/about-2-img-vector.svg"
+                    alt="vector"
+                    class="absolute pointer-events-none top-[60px] right-[65px] -z-[1]"
+                  />
+                  <img
+                    src="assets/img/about-2-img-vector-2.svg"
+                    alt="vector"
+                    class="absolute pointer-events-none -bottom-[30px] right-0 -z-[1] md:hidden"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- right -->
+            <div class="max-w-[54%] md:max-w-full">
+              <h6 class="ed-section-sub-title">Tentang Kami</h6>
+              <h2 class="ed-section-title mb-[6px]">
+                Pelajari dan Lestarikan
+                <span
+                  class="inline-block text-edgreen font-bold relative before:absolute before:left-0 before:top-[calc(100%-6px)] before:w-[137px] before:h-[14px] before:bg-[url('../assets/img/banner-2-title-vector.svg')] before:bg-[length:100%_100%]"
+                  >Warisan Budaya</span
+                >
+                untuk Masa Depan
+              </h2>
+              <p class="text-edgray mb-[34px]">
+                Dinas Kebudayaan Provinsi Riau berkomitmen untuk melestarikan
+                dan mengembangkan kebudayaan Melayu yang kaya. Kami mengajak
+                masyarakat untuk terlibat dalam menjaga tradisi, seni, dan adat
+                istiadat yang merupakan identitas kita bersama.
+              </p>
+              <ul
+                class="ed-about-list font-medium text-[18px] text-edblue grid grid-cols-2 xxs:grid-cols-1 gap-[20px] xxs:gap-[15px] mb-[52px] *:pl-[40px] *:relative *:before:absolute *:before:left-0 *:before:-top-[3px] *:before:w-[30px] *:before:aspect-square *:before:border *:before:border-edgreen *:before:rounded-full *:before:bg-[url(../assets/img/icon/checkmark.svg)] *:before:bg-no-repeat *:before:bg-[length:15px_13px] *:before:bg-center"
+              >
+                <li>Pelestarian Budaya</li>
+                <li>Komunitas Budaya</li>
+                <li>Bimbingan Ahli</li>
+                <li>Informasi Budaya</li>
+              </ul>
+              <!-- <a href="#" class="ed-btn">know more</a> -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ABOUT SECTION END -->
+      <!-- COURSES SECTION START -->
+      <section class="ed-2-courses py-[120px] xl:py-[80px] md:py-[60px]">
+        <div class="mx-[9.2%] xxxl:mx-[8.2%] xxl:mx-[3%]">
+          <!-- section heading -->
+          <div class="text-center mb-[21px]">
+            <h6 class="ed-section-sub-title">Berita dan Informasi</h6>
+            <h2 class="ed-section-title">Dinas Kebudayaan Provinsi Riau</h2>
+          </div>
+
+          <div
+            class="ed-2-courses-filter-navs flex flex-wrap justify-center gap-[10px] mb-[40px] xs:mb-[30px] pb-[30px] xs:pb-[20px] border-b border-[#002147]/15 mx-[200px] lg:mx-[100px] md:mx-[12px] *:border *:border-edgreen *:rounded-[6px] *:py-[5px] *:px-[10px] *:text-edgreen *:font-medium *:text-[14px]"
+          >
+            <button class="hover:bg-edgreen hover:text-white" data-filter="all">
+              All
+            </button>
+            <button
+              class="hover:bg-edgreen hover:text-white"
+              data-filter=".pelestarian"
+            >
+              Pelestarian
+            </button>
+            <button
+              class="hover:bg-edgreen hover:text-white"
+              data-filter=".web-dev"
+            >
+              Festival
+            </button>
+            <button
+              class="hover:bg-edgreen hover:text-white"
+              data-filter=".ui-ux-design"
+            >
+              Pembinaan
+            </button>
+            <button
+              class="hover:bg-edgreen hover:text-white"
+              data-filter=".data-science"
+            >
+              Informasi
+            </button>
+          </div>
+
+          <!-- course cards -->
+          <div
+            class="ed-2-courses-container grid grid-cols-4 xl:grid-cols-3 md:grid-cols-2 xs:grid-cols-1 gap-[30px] xxl:gap-[20px]"
+          >
+            <!-- single course -->
+            <div
+              class="ed-2-single-course mix pelestarian border border-[#e5e5e5] rounded-[10px] p-[20px] group"
+            >
+              <!-- course image  -->
+              <div class="relative overflow-hidden rounded-[10px] mb-[24px]">
+                <img
+                  src="assets/img/course-1.jpg"
+                  alt="Course Image"
+                  class="aspect-[330/223] w-full object-cover group-hover:scale-110"
+                />
+                <span
+                  class="absolute bg-edyellow px-[10px] h-[33px] flex gap-[8px] items-center top-[16px] left-[16px] rounded-[6px]"
+                >
+                  <span class="icon"
+                    ><img src="assets/img/icon/clock.svg" alt="icon"
+                  /></span>
+                  <span class="txt">Pelestarian</span>
+                </span>
+              </div>
+
+              <!-- course infos -->
+              <div class="flex justify-between items-center mb-[16px]">
+                <span
+                  class="inline-flex items-center justify-center border border-[#e5e5e5] px-[10px] h-[33px] rounded-[6px] font-medium text-[#808080] text-[14px]"
+                  >30 September 2024</span
+                >
+              </div>
+
+              <!-- course title -->
+              <h5 class="font-semibold text-[20px] text-edblue mb-[23px]">
+                <a
+                  href="kegiatan-disbud.html"
+                  class="hover:text-edgreen line-clamp-2"
+                  >Dinas Kebudayaan Adakan Lomba Pelestarian Budaya</a
+                >
+              </h5>
+              <h2 class="text-edgray text-xs line-clamp-3">
+                Mari ikut serta dalam lomba divelestarian budaya yang
+                diselenggarakan ...
+              </h2>
+              <br />
+              <hr />
+              <br />
+              <!-- course stats -->
+              <div
+                class="flex flex-wrap items-center gap-x-[30px] gap-y-[10px]"
+              >
+                <div
+                  class="flex items-center gap-[8px] text-[14px] text-edgray"
+                >
+                  <span class="icon"
+                    ><img src="assets/img/icon/user-group.svg" alt="icon"
+                  /></span>
+                  <span class="txt">admin disbud</span>
+                </div>
+
+                <!-- <div class="flex items-center gap-[8px] text-[14px] text-edgray">
+                                <span class="icon"><img src="assets/img/icon/lesson.svg" alt="icon"></span>
+                                <span class="txt">12 Lesson</span>
+                            </div> -->
+              </div>
+
+              <!-- course footer -->
+            </div>
+
+            <!-- single course -->
+            <div
+              class="ed-2-single-course mix web-dev border border-[#e5e5e5] rounded-[10px] p-[20px] group"
+            >
+              <!-- course image  -->
+              <div class="relative overflow-hidden rounded-[10px] mb-[24px]">
+                <img
+                  src="assets/img/course-1.jpg"
+                  alt="Course Image"
+                  class="aspect-[330/223] w-full object-cover group-hover:scale-110"
+                />
+                <span
+                  class="absolute bg-edyellow px-[10px] h-[33px] flex gap-[8px] items-center top-[16px] left-[16px] rounded-[6px]"
+                >
+                  <span class="icon"
+                    ><img src="assets/img/icon/clock.svg" alt="icon"
+                  /></span>
+                  <span class="txt">Festival</span>
+                </span>
+              </div>
+
+              <!-- course infos -->
+              <div class="flex justify-between items-center mb-[16px]">
+                <span
+                  class="inline-flex items-center justify-center border border-[#e5e5e5] px-[10px] h-[33px] rounded-[6px] font-medium text-[#808080] text-[14px]"
+                  >30 September 2024</span
+                >
+              </div>
+
+              <!-- course title -->
+              <h5 class="font-semibold text-[20px] text-edblue mb-[23px]">
+                <a
+                  href="kegiatan-disbud.html"
+                  class="hover:text-edgreen line-clamp-2"
+                  >Dinas Kebudayaan Gelar Festival Seni Tradisional</a
+                >
+              </h5>
+              <h2 class="text-edgray text-xs line-clamp-3">
+                Mari ikut serta dalam lomba divelestarian budaya yang
+                diselenggarakan ...
+              </h2>
+              <br />
+              <hr />
+              <br />
+              <!-- course stats -->
+              <div
+                class="flex flex-wrap items-center gap-x-[30px] gap-y-[10px]"
+              >
+                <div
+                  class="flex items-center gap-[8px] text-[14px] text-edgray"
+                >
+                  <span class="icon"
+                    ><img src="assets/img/icon/user-group.svg" alt="icon"
+                  /></span>
+                  <span class="txt">admin disbud</span>
+                </div>
+
+                <!-- <div class="flex items-center gap-[8px] text-[14px] text-edgray">
+                                <span class="icon"><img src="assets/img/icon/lesson.svg" alt="icon"></span>
+                                <span class="txt">12 Lesson</span>
+                            </div> -->
+              </div>
+
+              <!-- course footer -->
+            </div>
+
+            <!-- single course -->
+            <div
+              class="ed-2-single-course mix ui-ux-design border border-[#e5e5e5] rounded-[10px] p-[20px] group"
+            >
+              <!-- course image  -->
+              <div class="relative overflow-hidden rounded-[10px] mb-[24px]">
+                <img
+                  src="assets/img/course-1.jpg"
+                  alt="Course Image"
+                  class="aspect-[330/223] w-full object-cover group-hover:scale-110"
+                />
+                <span
+                  class="absolute bg-edyellow px-[10px] h-[33px] flex gap-[8px] items-center top-[16px] left-[16px] rounded-[6px]"
+                >
+                  <span class="icon"
+                    ><img src="assets/img/icon/clock.svg" alt="icon"
+                  /></span>
+                  <span class="txt">Pembinaan</span>
+                </span>
+              </div>
+
+              <!-- course infos -->
+              <div class="flex justify-between items-center mb-[16px]">
+                <span
+                  class="inline-flex items-center justify-center border border-[#e5e5e5] px-[10px] h-[33px] rounded-[6px] font-medium text-[#808080] text-[14px]"
+                  >30 September 2024</span
+                >
+              </div>
+
+              <!-- course title -->
+              <h5 class="font-semibold text-[20px] text-edblue mb-[23px]">
+                <a
+                  href="kegiatan-disbud.html"
+                  class="hover:text-edgreen line-clamp-2"
+                  >Lomba Kreativitas Budaya Digelar oleh Dinas Kebudayaan</a
+                >
+              </h5>
+              <h2 class="text-edgray text-xs line-clamp-3">
+                Mari ikut serta dalam lomba divelestarian budaya yang
+                diselenggarakan ...
+              </h2>
+              <br />
+              <hr />
+              <br />
+              <!-- course stats -->
+              <div
+                class="flex flex-wrap items-center gap-x-[30px] gap-y-[10px]"
+              >
+                <div
+                  class="flex items-center gap-[8px] text-[14px] text-edgray"
+                >
+                  <span class="icon"
+                    ><img src="assets/img/icon/user-group.svg" alt="icon"
+                  /></span>
+                  <span class="txt">admin disbud</span>
+                </div>
+
+                <!-- <div class="flex items-center gap-[8px] text-[14px] text-edgray">
+                                <span class="icon"><img src="assets/img/icon/lesson.svg" alt="icon"></span>
+                                <span class="txt">12 Lesson</span>
+                            </div> -->
+              </div>
+
+              <!-- course footer -->
+            </div>
+
+            <!-- single course -->
+            <div
+              class="ed-2-single-course mix data-science border border-[#e5e5e5] rounded-[10px] p-[20px] group"
+            >
+              <!-- course image  -->
+              <div class="relative overflow-hidden rounded-[10px] mb-[24px]">
+                <img
+                  src="assets/img/course-1.jpg"
+                  alt="Course Image"
+                  class="aspect-[330/223] w-full object-cover group-hover:scale-110"
+                />
+                <span
+                  class="absolute bg-edyellow px-[10px] h-[33px] flex gap-[8px] items-center top-[16px] left-[16px] rounded-[6px]"
+                >
+                  <span class="icon"
+                    ><img src="assets/img/icon/clock.svg" alt="icon"
+                  /></span>
+                  <span class="txt">Informasi</span>
+                </span>
+              </div>
+
+              <!-- course infos -->
+              <div class="flex justify-between items-center mb-[16px]">
+                <span
+                  class="inline-flex items-center justify-center border border-[#e5e5e5] px-[10px] h-[33px] rounded-[6px] font-medium text-[#808080] text-[14px]"
+                  >30 September 2024</span
+                >
+              </div>
+
+              <!-- course title -->
+              <h5 class="font-semibold text-[20px] text-edblue mb-[23px]">
+                <a
+                  href="kegiatan-disbud.html"
+                  class="hover:text-edgreen line-clamp-2"
+                  >Dinas Kebudayaan Perkuat Kearifan Lokal Melalui Lomba Adat</a
+                >
+              </h5>
+              <h2 class="text-edgray text-xs line-clamp-3">
+                Mari ikut serta dalam lomba divelestarian budaya yang
+                diselenggarakan ...
+              </h2>
+              <br />
+              <hr />
+              <br />
+              <!-- course stats -->
+              <div
+                class="flex flex-wrap items-center gap-x-[30px] gap-y-[10px]"
+              >
+                <div
+                  class="flex items-center gap-[8px] text-[14px] text-edgray"
+                >
+                  <span class="icon"
+                    ><img src="assets/img/icon/user-group.svg" alt="icon"
+                  /></span>
+                  <span class="txt">admin disbud</span>
+                </div>
+
+                <!-- <div class="flex items-center gap-[8px] text-[14px] text-edgray">
+                                <span class="icon"><img src="assets/img/icon/lesson.svg" alt="icon"></span>
+                                <span class="txt">12 Lesson</span>
+                            </div> -->
+              </div>
+
+              <!-- course footer -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- COURSES SECTION END -->
+    </main>
+
+    <!-- FOOTER SECTION START -->
+    <footer
+      style="background-color: black"
+      class="relative z-[1] before:absolute before:inset-0 before:-z-[1] before:bg-[url('../assets/img/footer-bg.jpg')] before:opacity-[7%] before:bg-no-repeat before:bg-cover before:bg-center text-white"
+    >
+      <div
+        class="mx-[19.71%] xxxl:mx-[14.71%] xxl:mx-[9.71%] xl:mx-[5.71%] md:mx-[12px]"
+      >
+        <!-- footer top -->
+        <div
+          class="flex flex-wrap justify-between gap-[35px] pt-[100px] pb-[58px] border-b border-white/20"
+        >
+          <!-- footer about -->
+          <div class="max-w-[370px] xxs:max-w-full">
+            <a href="index.html" class="mb-[23px] flex space-x-2">
+              <img
+                src="assets/img/image/logo-riau.png"
+                class="w-[50px]"
+                alt="logo-riau"
+              />
+              <img
+                src="assets/img/image/logo-disbud.png"
+                class="w-[50px]"
+                alt="logo-disbud"
+              />
+            </a>
+            <p class="text-[#D9D9D9] mb-[19px]">
+              Dinas Kebudayaan Provinsi Riau
+            </p>
+
+            <ul class="space-y-[17px]">
+              <li class="flex items-center gap-[8px]">
+                <span class="icon"
+                  ><img src="assets/img/call-icon-yellow.svg" alt="icon"
+                /></span>
+                <a href="tel:+6108-666-0112" class="hover:text-edyellow"
+                  >0812-3456-7890</a
+                >
+              </li>
+
+              <li class="flex items-center gap-[8px]">
+                <span class="icon"
+                  ><img src="assets/img/message-yellow.svg" alt="icon"
+                /></span>
+                <a href="mailto:info@gmail.com" class="hover:text-edyellow"
+                  >disbud@gmail.com</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- footer sitemap -->
+          <div>
+            <h6
+              class="font-semibold text-[18px] pb-[15px] mb-[30px] relative before:absolute before:bottom-0 before:left-0 before:h-[1.5px] before:w-[20px] before:bg-edyellow after:absolute after:bottom-0 after:left-[30px] after:h-[1.5px] after:w-[63px] after:bg-white"
+            >
+              Sitemap
+            </h6>
+
+            <div class="space-y-[18px]">
+              <a
+                href="#"
+                class="flex items-center gap-[10px] opacity-80 hover:text-edyellow"
+                ><span class="icon"
+                  ><img src="assets/img/double-arrow.svg" alt="icon"
+                /></span>
+                Beranda</a
+              >
+              <a
+                href="tentang-kami.html"
+                class="flex items-center gap-[10px] opacity-80 hover:text-edyellow"
+                ><span class="icon"
+                  ><img src="assets/img/double-arrow.svg" alt="icon"
+                /></span>
+                Tentang Kami</a
+              >
+              <a
+                href="detail-event-budaya.html"
+                class="flex items-center gap-[10px] opacity-80 hover:text-edyellow"
+                ><span class="icon"
+                  ><img src="assets/img/double-arrow.svg" alt="icon"
+                /></span>
+                Event Budaya</a
+              >
+              <a
+                href="kegiatan-disbud.html"
+                class="flex items-center gap-[10px] opacity-80 hover:text-edyellow"
+                ><span class="icon"
+                  ><img src="assets/img/double-arrow.svg" alt="icon"
+                /></span>
+                Kegiatan Disbud</a
+              >
+              <a
+                href="upt-museum.html"
+                class="flex items-center gap-[10px] opacity-80 hover:text-edyellow"
+                ><span class="icon"
+                  ><img src="assets/img/double-arrow.svg" alt="icon"
+                /></span>
+                UPT Museum</a
+              >
+            </div>
+          </div>
+
+          <!-- footer si-tari -->
+          <div class="max-w-[300px]">
+            <h6
+              class="font-semibold text-[18px] pb-[15px] mb-[30px] relative before:absolute before:bottom-0 before:left-0 before:h-[1.5px] before:w-[20px] before:bg-edyellow after:absolute after:bottom-0 after:left-[30px] after:h-[1.5px] after:w-[63px] after:bg-white"
+            >
+              SI-TARI
+            </h6>
+            <div
+              class="flex items-center gap-x-[60px] xxl:gap-x-[25px] lg:gap-x-[20px]"
+            >
+              <a
+                href="http://sitari.disbud.riau.go.id/"
+                class="ed-btn to-go-to-sidebar-in-mobile lg:m-[20px]"
+                >Si-Tari</a
+              >
+            </div>
+            <!-- footer si-tari -->
+            <div>
+              <!-- social links -->
+              <div class="flex gap-[20px] mt-[30px]">
+                <span
+                  class="pl-[30px] font-medium text-[#d9d9d9] relative before:absolute before:left-0 before:top-[50%] before:-translate-y-[50%] before:h-[1px] before:w-[20px] before:bg-[#d9d9d9]"
+                  >Ikuti Kami</span
+                >
+                <span class="inline-flex gap-[16px] text-[#d9d9d9]">
+                  <a href="#" class="hover:text-edyellow"
+                    ><i class="fa-brands fa-facebook-f"></i
+                  ></a>
+                  <a href="#" class="hover:text-edyellow"
+                    ><i class="fa-brands fa-x-twitter"></i
+                  ></a>
+                  <a href="#" class="hover:text-edyellow"
+                    ><i class="fa-brands fa-linkedin-in"></i
+                  ></a>
+                  <a href="#" class="hover:text-edyellow"
+                    ><i class="fa-brands fa-youtube"></i
+                  ></a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- footer bottom -->
+        <div
+          class="flex flex-wrap items-center justify-between gap-[15px] pt-[20px] pb-[50px] text-[#d9d9d9]"
+        >
+          <p>&copy; All Copyright 2024 by Edutics</p>
+
+          <div class="flex flex-wrap gap-[40px] xxs:gap-[15px]">
+            <a href="#" class="hover:text-edyellow">Terms & Conditions</a>
+            <a href="#" class="hover:text-edyellow">Privacy Policy</a>
+          </div>
+        </div>
+        <!-- footer bottom -->
+      </div>
+    </footer>
+    <!-- FOOTER SECTION END -->
+
+    <!-- js -->
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/fslightbox/fslightbox.js"></script>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
