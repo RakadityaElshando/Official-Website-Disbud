@@ -23,129 +23,6 @@
         class="fixed inset-0 z-[100] group-[.active]:bg-edblue/80 duration-[400ms] pointer-events-none group-[.active]:pointer-events-auto"
       ></div>
     </div>
-
-    <!-- cart -->
-    <div class="ed-cart-bar group">
-      <div
-        class="w-[420px] max-w-full fixed z-[100] right-0 top-0 h-full bg-white flex flex-col translate-x-[100%] duration-[400ms] group-[.active]:translate-x-0"
-      >
-        <!-- heading -->
-        <div
-          class="flex items-center justify-between px-[25px] border-b border-edgray/20 pb-[23px] pt-[22px]"
-        >
-          <h5 class="text-[20px]">My Cart List</h5>
-          <h6>(03 Items)</h6>
-        </div>
-
-        <!-- cart items -->
-        <div>
-          <!-- single cart item -->
-          <div
-            class="flex items-center gap-[20px] py-[30px] px-[25px] border-b border-edgray/20"
-          >
-            <img
-              src="assets/img/cart-item-1.jpg"
-              alt="Cart Item Image"
-              class="rounded-[10px] shrink-0"
-            />
-            <div class="grow">
-              <h6 class="font-medium text-[18px] text-edblue">
-                <a href="course-details.html" class="hover:text-edgreen"
-                  >Web Development</a
-                >
-              </h6>
-              <h6 class="font-medium text-edgray">$15.00</h6>
-            </div>
-            <button class="text-[20px] text-edgray shrink-0 hover:text-edgreen">
-              x
-            </button>
-          </div>
-
-          <!-- single cart item -->
-          <div
-            class="flex items-center gap-[20px] py-[30px] px-[25px] border-b border-edgray/20"
-          >
-            <img
-              src="assets/img/cart-item-2.jpg"
-              alt="Cart Item Image"
-              class="rounded-[10px] shrink-0"
-            />
-            <div class="grow">
-              <h6 class="font-medium text-[18px] text-edblue">
-                <a href="course-details.html" class="hover:text-edgreen"
-                  >Digital Marketing</a
-                >
-              </h6>
-              <h6 class="font-medium text-edgray">$15.00</h6>
-            </div>
-            <button class="text-[20px] text-edgray shrink-0 hover:text-edgreen">
-              x
-            </button>
-          </div>
-
-          <!-- single cart item -->
-          <div
-            class="flex items-center gap-[20px] py-[30px] px-[25px] border-b border-edgray/20"
-          >
-            <img
-              src="assets/img/cart-item-3.jpg"
-              alt="Cart Item Image"
-              class="rounded-[10px] shrink-0"
-            />
-            <div class="grow">
-              <h6 class="font-medium text-[18px] text-edblue">
-                <a href="course-details.html" class="hover:text-edgreen"
-                  >WordPress Development</a
-                >
-              </h6>
-              <h6 class="font-medium text-edgray">$15.00</h6>
-            </div>
-            <button class="text-[20px] text-edgray shrink-0 hover:text-edgreen">
-              x
-            </button>
-          </div>
-        </div>
-
-        <!-- cart bottom -->
-        <div class="mt-auto px-[25px] mb-[30px]">
-          <div
-            class="flex items-center justify-between font-medium text-[18px] text-edblue mb-[33px]"
-          >
-            <span>Total</span>
-            <span>$999</span>
-          </div>
-          <div class="space-y-[15px]">
-            <a
-              href="#"
-              class="ed-btn w-full !rounded-[10px] !bg-transparent border border-edblue !text-edblue hover:!bg-edblue hover:!text-white"
-              >Proceed to checkout</a
-            >
-            <a href="#" class="ed-btn w-full !rounded-[10px]"
-              >Proceed to checkout</a
-            >
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- search -->
-    <div class="ed-search group">
-      <form
-        action="#"
-        class="bg-white fixed z-[100] top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] h-[100px] md:h-[70px] xxs:h-[50px] w-[1224px] max-w-[95%] flex gap-[10px] rounded-full overflow-hidden px-[40px] xxs:px-[20px] pointer-events-none opacity-0 group-[.active]:pointer-events-auto group-[.active]:opacity-100 duration-[400ms]"
-      >
-        <input
-          type="search"
-          name="ed-search"
-          placeholder="Search Here..."
-          class="bg-transparent w-full focus:outline-none"
-        />
-        <button class="text-[25px] md:text-[22px] xxs:text-[20px]">
-          <i class="fa-solid fa-magnifying-glass"></i>
-        </button>
-      </form>
-    </div>
-
     <!-- sidebar -->
     <div class="ed-sidebar">
       <div
@@ -173,7 +50,6 @@
         <div class="ed-header-nav-in-mobile"></div>
       </div>
     </div>
-
     <!-- HEADER SECTION START -->
     <header
       class="bg-edyellow ed-header--2 relative z-[2] px-[7.9%] xxxxl:px-[6.5%] xxxl:px-[1%] lg:px-[15px] py-[25px] xxs:py-[16px] flex items-center justify-between to-be-fixed"
@@ -225,10 +101,16 @@
               <a role="button">PPID</a>
 
               <ul class="ed-header-submenu">
-                <li class="has-sub-menu relative">
-                  <a role="button">Profil PPID</a>
+                <li>
+                  <a href="ppid.html">Dokumen PPID</a>
+                </li>
+                <li>
+                  <a href="daftar-informasi-publik.html">Informasi Publik</a>
                 </li>
               </ul>
+            </li>
+            <li class="has-sub-menu relative">
+              <a href="upt-museum.html">UPT Museum</a>
             </li>
             <li class="has-sub-menu relative">
               <a role="button">Informasi</a>
@@ -238,7 +120,6 @@
                   <a href="event-budaya.html">Event Budaya</a>
                 </li>
                 <li><a href="kegiatan-disbud.html">Kegiatan DISBUD</a></li>
-                <li><a href="upt-museum.html">UPT Museum</a></li>
               </ul>
             </li>
 
@@ -369,7 +250,82 @@
                     class="text-[30px] lg:text-[27px] sm:text-[24px] xxs:text-[22px] font-semibold text-black mb-[10px]"
                   >
                     <a
-                      href="news-details.html"
+                      href="detail-kegiatan-disbud.html"
+                      class="hover:text-edgreen line-clamp-2"
+                      >Disbud Riau Gelar Festival Seni dan Budaya Tradisional</a
+                    >
+                  </h3>
+
+                  <p
+                    class="font-normal text-[16px] text-edgray mb-[16px] line-clamp-3"
+                  >
+                    Disbud Riau mengadakan festival untuk melestarikan seni dan
+                    budaya tradisional melalui berbagai pertunjukan.
+                  </p>
+
+                  <div class="flex items-center justify-between">
+                    <a
+                      href="detail-kegiatan-disbud.html"
+                      class="text-edgreen text-[16px] hover:text-edyellow"
+                      >Selengkapnya
+                      <span class="pl-[5px]"
+                        ><i class="fa-solid fa-arrow-right-long"></i></span
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <!-- single blog -->
+              <div
+                class="border border-[#D9D9D9] rounded-[8px] p-[24px] xxs:p-[18px]"
+              >
+                <div
+                  class="img overflow-hidden rounded-[8px] mb-[30px] relative"
+                >
+                  <img
+                    src="assets/img/news-details-img-1.jpg"
+                    alt="blog-cover"
+                    class="w-full"
+                  />
+
+                  <div
+                    class="bg-[#ECF0F5] rounded-[10px] font-medium text-[14px] text-black inline-block uppercase overflow-hidden text-center absolute top-[20px] left-[20px]"
+                  >
+                    <span
+                      class="bg-edgreen text-white block py-[3px] rounded-[10px]"
+                      >10</span
+                    >
+                    <span class="px-[11px] py-[2px] block">June</span>
+                  </div>
+                </div>
+
+                <!-- txt -->
+                <div>
+                  <!-- infos -->
+                  <div class="flex items-center gap-[30px] mb-[7px]">
+                    <!-- single info -->
+                    <div class="flex gap-[10px] items-center">
+                      <span class="icon shrink-0"
+                        ><img src="assets/img/icon/user.svg" alt="icon"
+                      /></span>
+                      <span class="text-[14px] text-edgray">Admin Disbud</span>
+                    </div>
+
+                    <!-- single info -->
+                    <div class="flex gap-[10px] items-center">
+                      <span class="icon shrink-0"
+                        ><img src="assets/img/icon/tag.svg" alt="icon"
+                      /></span>
+                      <span class="text-[14px] text-edgray"
+                        ><a href="#">Business</a></span
+                      >
+                    </div>
+                  </div>
+
+                  <h3
+                    class="text-[30px] lg:text-[27px] sm:text-[24px] xxs:text-[22px] font-semibold text-black mb-[10px]"
+                  >
+                    <a
+                      href="detail-kegiatan-disbud.html"
                       class="hover:text-edgreen line-clamp-2"
                       >Disbud Riau Gelar Festival Seni dan Budaya Tradisional</a
                     >
@@ -444,82 +400,7 @@
                     class="text-[30px] lg:text-[27px] sm:text-[24px] xxs:text-[22px] font-semibold text-black mb-[10px]"
                   >
                     <a
-                      href="news-details.html"
-                      class="hover:text-edgreen line-clamp-2"
-                      >Disbud Riau Gelar Festival Seni dan Budaya Tradisional</a
-                    >
-                  </h3>
-
-                  <p
-                    class="font-normal text-[16px] text-edgray mb-[16px] line-clamp-3"
-                  >
-                    Disbud Riau mengadakan festival untuk melestarikan seni dan
-                    budaya tradisional melalui berbagai pertunjukan.
-                  </p>
-
-                  <div class="flex items-center justify-between">
-                    <a
-                      href="news-details.html"
-                      class="text-edgreen text-[16px] hover:text-edyellow"
-                      >Selengkapnya
-                      <span class="pl-[5px]"
-                        ><i class="fa-solid fa-arrow-right-long"></i></span
-                    ></a>
-                  </div>
-                </div>
-              </div>
-              <!-- single blog -->
-              <div
-                class="border border-[#D9D9D9] rounded-[8px] p-[24px] xxs:p-[18px]"
-              >
-                <div
-                  class="img overflow-hidden rounded-[8px] mb-[30px] relative"
-                >
-                  <img
-                    src="assets/img/news-details-img-1.jpg"
-                    alt="blog-cover"
-                    class="w-full"
-                  />
-
-                  <div
-                    class="bg-[#ECF0F5] rounded-[10px] font-medium text-[14px] text-black inline-block uppercase overflow-hidden text-center absolute top-[20px] left-[20px]"
-                  >
-                    <span
-                      class="bg-edgreen text-white block py-[3px] rounded-[10px]"
-                      >10</span
-                    >
-                    <span class="px-[11px] py-[2px] block">June</span>
-                  </div>
-                </div>
-
-                <!-- txt -->
-                <div>
-                  <!-- infos -->
-                  <div class="flex items-center gap-[30px] mb-[7px]">
-                    <!-- single info -->
-                    <div class="flex gap-[10px] items-center">
-                      <span class="icon shrink-0"
-                        ><img src="assets/img/icon/user.svg" alt="icon"
-                      /></span>
-                      <span class="text-[14px] text-edgray">Admin Disbud</span>
-                    </div>
-
-                    <!-- single info -->
-                    <div class="flex gap-[10px] items-center">
-                      <span class="icon shrink-0"
-                        ><img src="assets/img/icon/tag.svg" alt="icon"
-                      /></span>
-                      <span class="text-[14px] text-edgray"
-                        ><a href="#">Business</a></span
-                      >
-                    </div>
-                  </div>
-
-                  <h3
-                    class="text-[30px] lg:text-[27px] sm:text-[24px] xxs:text-[22px] font-semibold text-black mb-[10px]"
-                  >
-                    <a
-                      href="news-details.html"
+                      href="detail-kegiatan-disbud.html"
                       class="hover:text-edgreen line-clamp-2"
                       >Disbud Riau Gelar Festival Seni dan Budaya Tradisional</a
                     >
@@ -728,7 +609,9 @@
                       </span>
 
                       <h6 class="font-semibold text-[15px] text-black">
-                        <a href="news-details.html" class="hover:text-edgreen"
+                        <a
+                          href="detail-kegiatan-disbud.html"
+                          class="hover:text-edgreen"
                           >Disbud Riau Gelar Festival Seni dan Budaya
                           Tradisional</a
                         >
