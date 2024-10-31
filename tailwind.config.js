@@ -8,6 +8,7 @@ module.exports = {
         edblue: "#241442",
         edpurple: "#5B3AEE",
         edyellow: "#F8BC24",
+        edred: "#C2163E",
         edoffwhite: "#FAF9F6",
         edgray: "#4F536C",
         edgray2: "#445375",
