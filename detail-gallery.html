@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tentang Kami - Dinas Kebudayaan Provinsi Riau</title>
+    <title>Detail Gallery- Dinas Kebudayaan Provinsi Riau</title>
     <link rel="shortcut icon" href="favicon.svg" type="image/x-icon" />
 
     <!-- plugins & libraries css -->
@@ -15,6 +15,28 @@
 
     <!-- custom css -->
     <link rel="stylesheet" href="assets/css/style.css" />
+    <style>
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    </style>
   </head>
 
   <body>
@@ -190,156 +212,125 @@
       <!-- BREADCRUMB SECTION END -->
 
       <!-- COURSES SECTION START -->
-      <section class="ed-2-courses py-[120px] xl:py-[80px] md:py-[60px]">
+      <section class="ed-2-courses py-[120px] xl:py-[80px] md:py-[60px] h-full">
         <div class="mx-[9.2%] xxxl:mx-[8.2%] xxl:mx-[3%]">
           <!-- section heading -->
-          <div class="text-center mb-[21px]">
-            <h6 class="ed-section-sub-title">Gallery</h6>
-            <h2 class="ed-section-title">Gallery Kegiatan</h2>
+          <div class="text-center mb-12">
+            <h6 class="ed-section-sub-title">Detail Gallery Kegiatan</h6>
+            <h2 class="ed-section-title">Festival Sanggar Tari Riau</h2>
           </div>
 
-          <div
-            class="ed-2-courses-filter-navs flex flex-wrap justify-center gap-[10px] mb-[40px] xs:mb-[30px] pb-[30px] xs:pb-[20px] border-b border-[#002147]/15 mx-[200px] lg:mx-[100px] md:mx-[12px] *:border *:border-edgreen *:rounded-[6px] *:py-[5px] *:px-[10px] *:text-edgreen *:font-medium *:text-[14px]"
-          >
-            <button class="hover:bg-edgreen hover:text-white" data-filter="all">
-              All
-            </button>
-            <button
-              class="hover:bg-edgreen hover:text-white"
-              data-filter=".pelestarian"
-            >
-              Pelestarian
-            </button>
-            <button
-              class="hover:bg-edgreen hover:text-white"
-              data-filter=".web-dev"
-            >
-              Festival
-            </button>
-            <button
-              class="hover:bg-edgreen hover:text-white"
-              data-filter=".ui-ux-design"
-            >
-              Pembinaan
-            </button>
-            <button
-              class="hover:bg-edgreen hover:text-white"
-              data-filter=".data-science"
-            >
-              Informasi
-            </button>
+          <!-- Slider main container -->
+          <div class="relative swiper mySwiper max-w-5xl rounded-2xl">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide flex-col items-center h-full">
+                <img
+                  src="assets/img/image/photo-landscape.jpg"
+                  alt="Image 1"
+                  width="100%"
+                  height="100%"
+                  class="object-fill"
+                />
+                <div class="text-center mt-4 w-full">
+                  <h5 class="text-2xl font-semibold mb-2">
+                    Festival Sanggar Tari Riau
+                  </h5>
+                  <p class="text-sm text-gray-500">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Iure, eum quia porro fuga cum illum reprehenderit aliquam
+                    veritatis laboriosam nobis. Consectetur saepe a tempora
+                    vitae, adipisci placeat sequi et praesentium!
+                  </p>
+                </div>
+              </div>
+              <!-- Slides -->
+              <div class="swiper-slide flex-col items-center h-full">
+                <img
+                  src="assets/img/image/photo-landscape.jpg"
+                  alt="Image 1"
+                  width="100%"
+                  height="100%"
+                  class="object-fill"
+                />
+                <div class="text-center mt-4 w-full">
+                  <h5 class="text-2xl font-semibold mb-2">
+                    Festival Sanggar Tari Riau
+                  </h5>
+                  <p class="text-sm text-gray-500">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Iure, eum quia porro fuga cum illum reprehenderit aliquam
+                    veritatis laboriosam nobis. Consectetur saepe a tempora
+                    vitae, adipisci placeat sequi et praesentium!
+                  </p>
+                </div>
+              </div>
+              <!-- Slides -->
+              <div class="swiper-slide flex-col items-center h-full">
+                <img
+                  src="assets/img/image/photo-landscape.jpg"
+                  alt="Image 1"
+                  width="100%"
+                  height="100%"
+                  class="object-fill"
+                />
+                <div class="text-center mt-4 w-full">
+                  <h5 class="text-2xl font-semibold mb-2">
+                    Festival Sanggar Tari Riau
+                  </h5>
+                  <p class="text-sm text-gray-500">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Iure, eum quia porro fuga cum illum reprehenderit aliquam
+                    veritatis laboriosam nobis. Consectetur saepe a tempora
+                    vitae, adipisci placeat sequi et praesentium!
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- If we need navigation buttons -->
+            <div
+              class="absolute swiper-button-prev w-16 h-16 rounded-full bg-edyellow left-8"
+            ></div>
+            <div
+              class="absolute swiper-button-next w-16 h-16 rounded-full bg-edyellow right-8"
+            ></div>
+
+            <!-- If we need pagination -->
+            <!-- <div class="swiper-pagination"></div> -->
           </div>
-
-          <!-- course cards -->
-          <div
-            class="ed-2-courses-container grid grid-cols-3 xl:grid-cols-3 md:grid-cols-2 xs:grid-cols-1 gap-[30px] xxl:gap-[20px]"
-          >
-            <!-- single course -->
-            <div
-              class="ed-2-single-course mix pelestarian border border-[#e5e5e5] rounded-[10px] p-[20px] group"
-            >
-              <!-- course image  -->
-              <div class="relative overflow-hidden rounded-[10px] mb-[24px]">
-                <img
-                  src="assets/img/course-1.jpg"
-                  alt="Course Image"
-                  class="aspect-[330/223] w-full object-cover group-hover:scale-110"
-                />
+          <!-- <div class="container mx-auto py-10">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="relative swiper-slide">
+                  <img
+                    src="assets/img/image/photo-landscape.jpg"
+                    alt="Image 1"
+                    class="w-[1024px] h-[768px] object-cover rounded-lg"
+                  />
+                  <div class="text-center mt-2">
+                    <h5 class="text-lg font-semibold">Title 1</h5>
+                    <p class="text-sm text-gray-500">Description for Image 1</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="assets/img/image/photo-landscape.jpg"
+                    alt="Image 2"
+                    class="w-[1024px] h-[768px] object-cover rounded-lg"
+                  />
+                  <div class="text-center mt-2">
+                    <h5 class="text-lg font-semibold">Title 2</h5>
+                    <p class="text-sm text-gray-500">Description for Image 2</p>
+                  </div>
+                </div>
               </div>
-
-              <!-- course infos -->
-              <div class="flex justify-between items-center mb-[16px]">
-                <span
-                  class="bg-edyellow px-[10px] h-[33px] flex gap-[8px] items-center rounded-[6px]"
-                >
-                  <span class="txt">Pelestarian</span>
-                </span>
-                <span
-                  class="inline-flex items-center justify-center border border-[#e5e5e5] px-[10px] h-[33px] rounded-[6px] font-medium text-[#808080] text-[14px]"
-                  >30 September 2024</span
-                >
-              </div>
-
-              <!-- course title -->
-              <h5
-                class="font-semibold text-[20px] text-edblue mb-[23px] hover:text-edgreen line-clamp-2"
-              >
-                <a href="detail-gallery.html"
-                  >Dinas Kebudayaan Adakan Lomba Pelestarian Budaya</a
-                >
-              </h5>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
             </div>
-            <!-- single course -->
-            <div
-              class="ed-2-single-course mix pelestarian border border-[#e5e5e5] rounded-[10px] p-[20px] group"
-            >
-              <!-- course image  -->
-              <div class="relative overflow-hidden rounded-[10px] mb-[24px]">
-                <img
-                  src="assets/img/course-1.jpg"
-                  alt="Course Image"
-                  class="aspect-[330/223] w-full object-cover group-hover:scale-110"
-                />
-              </div>
-
-              <!-- course infos -->
-              <div class="flex justify-between items-center mb-[16px]">
-                <span
-                  class="bg-edyellow px-[10px] h-[33px] flex gap-[8px] items-center rounded-[6px]"
-                >
-                  <span class="txt">Pelestarian</span>
-                </span>
-                <span
-                  class="inline-flex items-center justify-center border border-[#e5e5e5] px-[10px] h-[33px] rounded-[6px] font-medium text-[#808080] text-[14px]"
-                  >30 September 2024</span
-                >
-              </div>
-
-              <!-- course title -->
-              <h5
-                class="font-semibold text-[20px] text-edblue mb-[23px] hover:text-edgreen line-clamp-2"
-              >
-                <a href="detail-gallery.html"
-                  >Dinas Kebudayaan Adakan Lomba Pelestarian Budaya</a
-                >
-              </h5>
-            </div>
-            <!-- single course -->
-            <div
-              class="ed-2-single-course mix pelestarian border border-[#e5e5e5] rounded-[10px] p-[20px] group"
-            >
-              <!-- course image  -->
-              <div class="relative overflow-hidden rounded-[10px] mb-[24px]">
-                <img
-                  src="assets/img/course-1.jpg"
-                  alt="Course Image"
-                  class="aspect-[330/223] w-full object-cover group-hover:scale-110"
-                />
-              </div>
-
-              <!-- course infos -->
-              <div class="flex justify-between items-center mb-[16px]">
-                <span
-                  class="bg-edyellow px-[10px] h-[33px] flex gap-[8px] items-center rounded-[6px]"
-                >
-                  <span class="txt">Pelestarian</span>
-                </span>
-                <span
-                  class="inline-flex items-center justify-center border border-[#e5e5e5] px-[10px] h-[33px] rounded-[6px] font-medium text-[#808080] text-[14px]"
-                  >30 September 2024</span
-                >
-              </div>
-
-              <!-- course title -->
-              <h5
-                class="font-semibold text-[20px] text-edblue mb-[23px] hover:text-edgreen line-clamp-2"
-              >
-                <a href="detail-gallery.html"
-                  >Dinas Kebudayaan Adakan Lomba Pelestarian Budaya</a
-                >
-              </h5>
-            </div>
-          </div>
+          </div> -->
         </div>
       </section>
       <!-- COURSES SECTION END -->
@@ -512,5 +503,17 @@
     <script src="assets/vendor/fslightbox/fslightbox.js"></script>
 
     <script src="assets/js/main.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        cssMode: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        mousewheel: true,
+        keyboard: true,
+      });
+    </script>
   </body>
 </html>
