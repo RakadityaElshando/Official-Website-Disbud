@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sejarah Singkat - Dinas Kebudayaan Provinsi Riau</title>
+    <link rel="shortcut icon" href="favicon.svg" type="image/x-icon" />
+
+    <!-- plugins & libraries css -->
+    <link rel="stylesheet" href="assets/vendor/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/vendor/font-awesome/all.min.css" />
+
+    <!-- tailwind css -->
+    <link rel="stylesheet" href="src/output.css" />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <div class="ed-overlay group">
+      <div
+        class="fixed inset-0 z-[100] group-[.active]:bg-edblue/80 duration-[400ms] pointer-events-none group-[.active]:pointer-events-auto"
+      ></div>
+    </div>
+    <!-- sidebar -->
+    <div class="ed-sidebar">
+      <div
+        class="translate-x-[100%] transition-transform ease-linear duration-300 fixed right-0 w-full max-w-[25%] xl:max-w-[30%] lg:max-w-[40%] md:max-w-[50%] sm:max-w-[60%] xxs:max-w-full bg-white h-full z-[100] overflow-auto"
+      >
+        <!-- heading -->
+        <div
+          class="ed-sidebar-heading p-[20px] lg:p-[20px] border-b border-edgray/20"
+        >
+          <div class="logo flex justify-between items-center">
+            <a href="index.html"
+              ><img src="assets/img/logo.png" alt="logo"
+            /></a>
+
+            <button
+              type="button"
+              class="ed-sidebar-close-btn border border-edgray/20 w-[45px] aspect-square shrink-0 text-black text-[22px] rounded-full hover:text-edgreen"
+            >
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- mobile menu -->
+        <div class="ed-header-nav-in-mobile"></div>
+      </div>
+    </div>
+    <!-- HEADER SECTION START -->
+    <header
+      class="bg-edyellow ed-header--2 relative z-[2] px-[7.9%] xxxxl:px-[6.5%] xxxl:px-[1%] lg:px-[15px] py-[25px] xxs:py-[16px] flex items-center justify-between to-be-fixed"
+    >
+      <div class="logo xxs:max-w-[40%]">
+        <a href="index.html" class="flex space-x-2">
+          <img
+            src="assets/img/image/logo-riau.png"
+            class="w-[50px]"
+            alt="logo-riau"
+          />
+          <img
+            src="assets/img/image/logo-disbud.png"
+            class="w-[50px]"
+            alt="logo-disbud"
+          />
+        </a>
+      </div>
+
+      <div class="flex lg:items-center lg:gap-[30px]">
+        <div
+          class="flex lg:flex-col items-center gap-[60px] xxl:gap-[25px] xl:gap-[30px] md:gap-y-[15px] bg"
+        >
+          <!-- nav -->
+          <ul
+            class="to-go-to-sidebar-in-mobile ed-header-nav flex lg:flex-col gap-x-[43px] xxl:gap-x-[33px] font-kanit text-[17px] font-normal"
+          >
+            <li><a href="index.html">Beranda</a></li>
+            <li class="has-sub-menu relative">
+              <a role="button">Profil</a>
+
+              <ul class="ed-header-submenu">
+                <li class="has-sub-menu relative">
+                  <a href="tentang-kami.html">Tentang Kami</a>
+                </li>
+                <li class="has-sub-menu relative">
+                  <a href="sejarah-singkat.html">Sejarah Singkat</a>
+                </li>
+                <li class="has-sub-menu relative">
+                  <a href="visi-misi.html">Visi Misi</a>
+                </li>
+                <li class="has-sub-menu relative">
+                  <a href="struktur-organisasi.html">Struktur Organisasi</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="has-sub-menu relative">
+              <a role="button">PPID</a>
+
+              <ul class="ed-header-submenu">
+                <li>
+                  <a href="ppid.html">Dokumen PPID</a>
+                </li>
+                <li>
+                  <a href="daftar-informasi-publik.html">Informasi Publik</a>
+                </li>
+              </ul>
+            </li>
+            <li class="has-sub-menu relative">
+              <a href="upt-museum.html">UPT Museum</a>
+            </li>
+            <li class="has-sub-menu relative">
+              <a role="button">Informasi</a>
+
+              <ul class="ed-header-submenu">
+                <li>
+                  <a href="event-budaya.html">Event Budaya</a>
+                </li>
+                <li><a href="kegiatan-disbud.html">Kegiatan DISBUD</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="survey.html">Survey</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="kontak.html">Kontak</a>
+            </li>
+          </ul>
+
+          <!-- right actions -->
+          <div
+            class="flex items-center gap-x-[60px] xxl:gap-x-[25px] lg:gap-x-[20px]"
+          >
+            <a
+              href="http://sitari.disbud.riau.go.id/"
+              class="ed-btn to-go-to-sidebar-in-mobile lg:m-[20px]"
+              >Si-Tari</a
+            >
+          </div>
+        </div>
+
+        <!-- mobile menu button -->
+        <button
+          type="button"
+          class="ed-mobile-menu-open-btn hidden lg:inline-block text-white text-[18px] hover:text-edyellow"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </header>
+    <!-- HEADER SECTION END -->
+
+    <main>
+      <!-- BREADCRUMB SECTION START -->
+      <section
+        class="pt-[128px] xl:pt-[128px] lg:pt-[96px] sm:pt-[64px] xxs:pt-[48px] pb-[96px] xl:pb-[96px] lg:pb-[96px] sm:pb-[72px] xs:pb-[54px] text-center bg-[url('../assets/img/breadcrumb-bg.jpg')] bg-no-repeat bg-cover bg-center relative z-[1] overflow-hidden before:absolute before:-z-[1] before:inset-0 before:bg-edblue/70 before:pointer-events-none"
+      >
+        <div
+          class="mx-[19.71%] xxxl:mx-[14.71%] xxl:mx-[9.71%] xl:mx-[5.71%] md:mx-[12px]"
+        >
+          <h1 class="font-semibold text-[clamp(35px,6vw,56px)] text-white">
+            Artikel
+          </h1>
+          <ul class="flex items-center justify-center gap-[10px] text-white">
+            <li><a href="index.html" class="text-edyellow">Beranda</a></li>
+            <li>
+              <span class="text-[12px]"
+                ><i class="fa-solid fa-angle-double-right"></i
+              ></span>
+            </li>
+            <li>Artikel</li>
+          </ul>
+        </div>
+
+        <div class="vectors">
+          <img
+            src="assets/img/breadcrumb-vector-1.svg"
+            alt="vector"
+            class="absolute -z-[1] pointer-events-none bottom-[34px] left-0 xl:left-auto xl:right-[90%]"
+          />
+          <img
+            src="assets/img/breadcrumb-vector-2.svg"
+            alt="vector"
+            class="absolute -z-[1] pointer-events-none bottom-0 right-0 xl:right-auto xl:left-[60%]"
+          />
+        </div>
+      </section>
+      <!-- BREADCRUMB SECTION END -->
+
+      <!-- COURSE GRID SECTION START -->
+      <div class="py-[120px] xl:py-[80px] md:py-[60px]">
+        <div
+          class="mx-[19.71%] xxxl:mx-[14.71%] xxl:mx-[9.71%] xl:mx-[5.71%] md:mx-[12px]"
+        >
+          <div
+            class="grid grid-cols-3 md:grid-cols-2 xxs:grid-cols-1 gap-[30px] lg:gap-[20px]"
+          >
+            <!-- single course card -->
+            <div
+              class="ed-2-single-course mix personal-skill border border-[#e5e5e5] rounded-[10px] p-[20px] group"
+            >
+              <!-- course image  -->
+              <div class="relative overflow-hidden rounded-[10px] mb-[24px]">
+                <img
+                  src="assets/img/course-1.jpg"
+                  alt="Course Image"
+                  class="aspect-[330/223] w-full object-cover group-hover:scale-110"
+                />
+              </div>
+
+              <!-- course infos -->
+              <div class="items-center mb-[16px]">
+                <span
+                  class="inline-flex items-center justify-center border bg-edyellow px-[10px] h-[33px] rounded-[6px] font-medium text-black text-[14px]"
+                  >Cagar Budaya</span
+                >
+              </div>
+
+              <!-- course title -->
+              <h5 class="font-semibold text-[20px] text-edblue mb-[23px]">
+                <a href="detail-artikel.html" class="hover:text-edgreen"
+                  >Artikel tentang kebudayaan dan sanggar tari</a
+                >
+                <p class="text-sm font-normal text-gray-500 mt-2">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Optio unde, repellat id ratione neque quod.
+                </p>
+              </h5>
+
+              <!-- course footer -->
+              <div
+                class="flex flex-wrap gap-x-[20px] gap-y-[15px] justify-between items-center border-t border-[#E5E5E5] pt-[24px] mt-[24px]"
+              >
+                <div
+                  class="flex items-center gap-[8px] text-[14px] text-edgray"
+                >
+                  <span class="icon"
+                    ><img src="assets/img/icon/user-group.svg" alt="icon"
+                  /></span>
+                  <span class="txt">Admin Disbud</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- single course card -->
+            <div
+              class="ed-2-single-course mix personal-skill border border-[#e5e5e5] rounded-[10px] p-[20px] group"
+            >
+              <!-- course image  -->
+              <div class="relative overflow-hidden rounded-[10px] mb-[24px]">
+                <img
+                  src="assets/img/course-1.jpg"
+                  alt="Course Image"
+                  class="aspect-[330/223] w-full object-cover group-hover:scale-110"
+                />
+              </div>
+
+              <!-- course infos -->
+              <div class="items-center mb-[16px]">
+                <span
+                  class="inline-flex items-center justify-center border bg-edyellow px-[10px] h-[33px] rounded-[6px] font-medium text-black text-[14px]"
+                  >Cagar Budaya</span
+                >
+              </div>
+
+              <!-- course title -->
+              <h5 class="font-semibold text-[20px] text-edblue mb-[23px]">
+                <a href="course-details.html" class="hover:text-edgreen"
+                  >Artikel tentang kebudayaan dan sanggar tari</a
+                >
+                <p class="text-sm font-normal text-gray-500 mt-2">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Optio unde, repellat id ratione neque quod.
+                </p>
+              </h5>
+
+              <!-- course footer -->
+              <div
+                class="flex flex-wrap gap-x-[20px] gap-y-[15px] justify-between items-center border-t border-[#E5E5E5] pt-[24px] mt-[24px]"
+              >
+                <div
+                  class="flex items-center gap-[8px] text-[14px] text-edgray"
+                >
+                  <span class="icon"
+                    ><img src="assets/img/icon/user-group.svg" alt="icon"
+                  /></span>
+                  <span class="txt">Admin Disbud</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- single course card -->
+            <div
+              class="ed-2-single-course mix personal-skill border border-[#e5e5e5] rounded-[10px] p-[20px] group"
+            >
+              <!-- course image  -->
+              <div class="relative overflow-hidden rounded-[10px] mb-[24px]">
+                <img
+                  src="assets/img/course-1.jpg"
+                  alt="Course Image"
+                  class="aspect-[330/223] w-full object-cover group-hover:scale-110"
+                />
+              </div>
+
+              <!-- course infos -->
+              <div class="items-center mb-[16px]">
+                <span
+                  class="inline-flex items-center justify-center border bg-edyellow px-[10px] h-[33px] rounded-[6px] font-medium text-black text-[14px]"
+                  >Cagar Budaya</span
+                >
+              </div>
+
+              <!-- course title -->
+              <h5 class="font-semibold text-[20px] text-edblue mb-[23px]">
+                <a href="course-details.html" class="hover:text-edgreen"
+                  >Artikel tentang kebudayaan dan sanggar tari</a
+                >
+                <p class="text-sm font-normal text-gray-500 mt-2">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Optio unde, repellat id ratione neque quod.
+                </p>
+              </h5>
+
+              <!-- course footer -->
+              <div
+                class="flex flex-wrap gap-x-[20px] gap-y-[15px] justify-between items-center border-t border-[#E5E5E5] pt-[24px] mt-[24px]"
+              >
+                <div
+                  class="flex items-center gap-[8px] text-[14px] text-edgray"
+                >
+                  <span class="icon"
+                    ><img src="assets/img/icon/user-group.svg" alt="icon"
+                  /></span>
+                  <span class="txt">Admin Disbud</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- single course card -->
+            <div
+              class="ed-2-single-course mix personal-skill border border-[#e5e5e5] rounded-[10px] p-[20px] group"
+            >
+              <!-- course image  -->
+              <div class="relative overflow-hidden rounded-[10px] mb-[24px]">
+                <img
+                  src="assets/img/course-1.jpg"
+                  alt="Course Image"
+                  class="aspect-[330/223] w-full object-cover group-hover:scale-110"
+                />
+              </div>
+
+              <!-- course infos -->
+              <div class="items-center mb-[16px]">
+                <span
+                  class="inline-flex items-center justify-center border bg-edyellow px-[10px] h-[33px] rounded-[6px] font-medium text-black text-[14px]"
+                  >Cagar Budaya</span
+                >
+              </div>
+
+              <!-- course title -->
+              <h5 class="font-semibold text-[20px] text-edblue mb-[23px]">
+                <a href="course-details.html" class="hover:text-edgreen"
+                  >Artikel tentang kebudayaan dan sanggar tari</a
+                >
+                <p class="text-sm font-normal text-gray-500 mt-2">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Optio unde, repellat id ratione neque quod.
+                </p>
+              </h5>
+
+              <!-- course footer -->
+              <div
+                class="flex flex-wrap gap-x-[20px] gap-y-[15px] justify-between items-center border-t border-[#E5E5E5] pt-[24px] mt-[24px]"
+              >
+                <div
+                  class="flex items-center gap-[8px] text-[14px] text-edgray"
+                >
+                  <span class="icon"
+                    ><img src="assets/img/icon/user-group.svg" alt="icon"
+                  /></span>
+                  <span class="txt">Admin Disbud</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- single course card -->
+            <div
+              class="ed-2-single-course mix personal-skill border border-[#e5e5e5] rounded-[10px] p-[20px] group"
+            >
+              <!-- course image  -->
+              <div class="relative overflow-hidden rounded-[10px] mb-[24px]">
+                <img
+                  src="assets/img/course-1.jpg"
+                  alt="Course Image"
+                  class="aspect-[330/223] w-full object-cover group-hover:scale-110"
+                />
+              </div>
+
+              <!-- course infos -->
+              <div class="items-center mb-[16px]">
+                <span
+                  class="inline-flex items-center justify-center border bg-edyellow px-[10px] h-[33px] rounded-[6px] font-medium text-black text-[14px]"
+                  >Cagar Budaya</span
+                >
+              </div>
+
+              <!-- course title -->
+              <h5 class="font-semibold text-[20px] text-edblue mb-[23px]">
+                <a href="course-details.html" class="hover:text-edgreen"
+                  >Artikel tentang kebudayaan dan sanggar tari</a
+                >
+                <p class="text-sm font-normal text-gray-500 mt-2">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Optio unde, repellat id ratione neque quod.
+                </p>
+              </h5>
+
+              <!-- course footer -->
+              <div
+                class="flex flex-wrap gap-x-[20px] gap-y-[15px] justify-between items-center border-t border-[#E5E5E5] pt-[24px] mt-[24px]"
+              >
+                <div
+                  class="flex items-center gap-[8px] text-[14px] text-edgray"
+                >
+                  <span class="icon"
+                    ><img src="assets/img/icon/user-group.svg" alt="icon"
+                  /></span>
+                  <span class="txt">Admin Disbud</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- single course card -->
+            <div
+              class="ed-2-single-course mix personal-skill border border-[#e5e5e5] rounded-[10px] p-[20px] group"
+            >
+              <!-- course image  -->
+              <div class="relative overflow-hidden rounded-[10px] mb-[24px]">
+                <img
+                  src="assets/img/course-1.jpg"
+                  alt="Course Image"
+                  class="aspect-[330/223] w-full object-cover group-hover:scale-110"
+                />
+              </div>
+
+              <!-- course infos -->
+              <div class="items-center mb-[16px]">
+                <span
+                  class="inline-flex items-center justify-center border bg-edyellow px-[10px] h-[33px] rounded-[6px] font-medium text-black text-[14px]"
+                  >Cagar Budaya</span
+                >
+              </div>
+
+              <!-- course title -->
+              <h5 class="font-semibold text-[20px] text-edblue mb-[23px]">
+                <a href="course-details.html" class="hover:text-edgreen"
+                  >Artikel tentang kebudayaan dan sanggar tari</a
+                >
+                <p class="text-sm font-normal text-gray-500 mt-2">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Optio unde, repellat id ratione neque quod.
+                </p>
+              </h5>
+
+              <!-- course footer -->
+              <div
+                class="flex flex-wrap gap-x-[20px] gap-y-[15px] justify-between items-center border-t border-[#E5E5E5] pt-[24px] mt-[24px]"
+              >
+                <div
+                  class="flex items-center gap-[8px] text-[14px] text-edgray"
+                >
+                  <span class="icon"
+                    ><img src="assets/img/icon/user-group.svg" alt="icon"
+                  /></span>
+                  <span class="txt">Admin Disbud</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- pagination -->
+          <div
+            class="flex items-center gap-[20px] pt-[60px] justify-center text-[16px]"
+          >
+            <a href="#" class="hover:text-edpurple"
+              ><i class="fa-solid fa-arrow-left-long"></i
+            ></a>
+            <div class="ed-pagination flex gap-[10px] items-center">
+              <a
+                href="#"
+                class="border border-[#d9d9d9] rounded-full w-[50px] h-[50px] flex items-center justify-center text-etBlack hover:bg-edpurple hover:border-edpurple hover:text-white active"
+                >01</a
+              >
+              <a
+                href="#"
+                class="border border-[#d9d9d9] rounded-full w-[50px] h-[50px] flex items-center justify-center text-etBlack hover:bg-edpurple hover:border-edpurple hover:text-white"
+                >02</a
+              >
+              <a
+                href="#"
+                class="border border-[#d9d9d9] rounded-full w-[50px] h-[50px] flex items-center justify-center text-etBlack hover:bg-edpurple hover:border-edpurple hover:text-white"
+                >03</a
+              >
+            </div>
+            <a href="#" class="hover:text-edpurple"
+              ><i class="fa-solid fa-arrow-right-long"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <!-- COURSE GRID SECTION END -->
+    </main>
+
+    <!-- FOOTER SECTION START -->
+    <footer
+      style="background-color: black"
+      class="relative z-[1] before:absolute before:inset-0 before:-z-[1] before:bg-[url('../assets/img/footer-bg.jpg')] before:opacity-[7%] before:bg-no-repeat before:bg-cover before:bg-center text-white"
+    >
+      <div
+        class="mx-[19.71%] xxxl:mx-[14.71%] xxl:mx-[9.71%] xl:mx-[5.71%] md:mx-[12px]"
+      >
+        <!-- footer top -->
+        <div
+          class="flex flex-wrap justify-between gap-[35px] pt-[100px] pb-[58px] border-b border-white/20"
+        >
+          <!-- footer about -->
+          <div class="max-w-[370px] xxs:max-w-full">
+            <a href="index.html" class="mb-[23px] flex space-x-2">
+              <img
+                src="assets/img/image/logo-riau.png"
+                class="w-[50px]"
+                alt="logo-riau"
+              />
+              <img
+                src="assets/img/image/logo-disbud.png"
+                class="w-[50px]"
+                alt="logo-disbud"
+              />
+            </a>
+            <p class="text-[#D9D9D9] mb-[19px]">
+              Dinas Kebudayaan Provinsi Riau
+            </p>
+
+            <ul class="space-y-[17px]">
+              <li class="flex items-center gap-[8px]">
+                <span class="icon"
+                  ><img src="assets/img/call-icon-yellow.svg" alt="icon"
+                /></span>
+                <a href="tel:+6108-666-0112" class="hover:text-edyellow"
+                  >0812-3456-7890</a
+                >
+              </li>
+
+              <li class="flex items-center gap-[8px]">
+                <span class="icon"
+                  ><img src="assets/img/message-yellow.svg" alt="icon"
+                /></span>
+                <a href="mailto:info@gmail.com" class="hover:text-edyellow"
+                  >disbud@gmail.com</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- footer sitemap -->
+          <div>
+            <h6
+              class="font-semibold text-[18px] pb-[15px] mb-[30px] relative before:absolute before:bottom-0 before:left-0 before:h-[1.5px] before:w-[20px] before:bg-edyellow after:absolute after:bottom-0 after:left-[30px] after:h-[1.5px] after:w-[63px] after:bg-white"
+            >
+              Sitemap
+            </h6>
+
+            <div class="space-y-[18px]">
+              <a
+                href="#"
+                class="flex items-center gap-[10px] opacity-80 hover:text-edyellow"
+                ><span class="icon"
+                  ><img src="assets/img/double-arrow.svg" alt="icon"
+                /></span>
+                Beranda</a
+              >
+              <a
+                href="tentang-kami.html"
+                class="flex items-center gap-[10px] opacity-80 hover:text-edyellow"
+                ><span class="icon"
+                  ><img src="assets/img/double-arrow.svg" alt="icon"
+                /></span>
+                Tentang Kami</a
+              >
+              <a
+                href="detail-event-budaya.html"
+                class="flex items-center gap-[10px] opacity-80 hover:text-edyellow"
+                ><span class="icon"
+                  ><img src="assets/img/double-arrow.svg" alt="icon"
+                /></span>
+                Event Budaya</a
+              >
+              <a
+                href="kegiatan-disbud.html"
+                class="flex items-center gap-[10px] opacity-80 hover:text-edyellow"
+                ><span class="icon"
+                  ><img src="assets/img/double-arrow.svg" alt="icon"
+                /></span>
+                Kegiatan Disbud</a
+              >
+              <a
+                href="upt-museum.html"
+                class="flex items-center gap-[10px] opacity-80 hover:text-edyellow"
+                ><span class="icon"
+                  ><img src="assets/img/double-arrow.svg" alt="icon"
+                /></span>
+                UPT Museum</a
+              >
+            </div>
+          </div>
+
+          <!-- footer si-tari -->
+          <div class="max-w-[300px]">
+            <h6
+              class="font-semibold text-[18px] pb-[15px] mb-[30px] relative before:absolute before:bottom-0 before:left-0 before:h-[1.5px] before:w-[20px] before:bg-edyellow after:absolute after:bottom-0 after:left-[30px] after:h-[1.5px] after:w-[63px] after:bg-white"
+            >
+              SI-TARI
+            </h6>
+            <div
+              class="flex items-center gap-x-[60px] xxl:gap-x-[25px] lg:gap-x-[20px]"
+            >
+              <a
+                href="http://sitari.disbud.riau.go.id/"
+                class="ed-btn to-go-to-sidebar-in-mobile lg:m-[20px]"
+                >Si-Tari</a
+              >
+            </div>
+            <!-- footer si-tari -->
+            <div>
+              <!-- social links -->
+              <div class="flex gap-[20px] mt-[30px]">
+                <span
+                  class="pl-[30px] font-medium text-[#d9d9d9] relative before:absolute before:left-0 before:top-[50%] before:-translate-y-[50%] before:h-[1px] before:w-[20px] before:bg-[#d9d9d9]"
+                  >Ikuti Kami</span
+                >
+                <span class="inline-flex gap-[16px] text-[#d9d9d9]">
+                  <a href="#" class="hover:text-edyellow"
+                    ><i class="fa-brands fa-facebook-f"></i
+                  ></a>
+                  <a href="#" class="hover:text-edyellow"
+                    ><i class="fa-brands fa-x-twitter"></i
+                  ></a>
+                  <a href="#" class="hover:text-edyellow"
+                    ><i class="fa-brands fa-linkedin-in"></i
+                  ></a>
+                  <a href="#" class="hover:text-edyellow"
+                    ><i class="fa-brands fa-youtube"></i
+                  ></a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- footer bottom -->
+        <div
+          class="flex flex-wrap items-center justify-between gap-[15px] pt-[20px] pb-[50px] text-[#d9d9d9]"
+        >
+          <p>&copy; All Copyright 2024 by Edutics</p>
+
+          <div class="flex flex-wrap gap-[40px] xxs:gap-[15px]">
+            <a href="#" class="hover:text-edyellow">Terms & Conditions</a>
+            <a href="#" class="hover:text-edyellow">Privacy Policy</a>
+          </div>
+        </div>
+        <!-- footer bottom -->
+      </div>
+    </footer>
+    <!-- FOOTER SECTION END -->
+
+    <!-- js -->
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/fslightbox/fslightbox.js"></script>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/accordion.js"></script>
+    <script src="assets/js/progress-bar.js"></script>
+  </body>
+</html>
