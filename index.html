@@ -156,8 +156,9 @@
     <!-- HEADER SECTION END -->
 
     <main>
-      <!-- BANNER SECTION START -->
+      <!-- BANNER SECTION START With No BG -->
       <section
+        id="section-home"
         class="ed-2-banner bg-edoffwhite pt-[120px] pb-[190px] relative z-[1] overflow-hidden"
       >
         <div
@@ -186,13 +187,6 @@
                 sejarah. Dari seni hingga adat istiadat, mari kita lestarikan
                 bersama keindahan yang tak lekang oleh waktu.
               </p>
-              <div class="flex flex-wrap gap-[10px]">
-                <!-- <a href="course-filter.html"
-                                class="ed-btn !bg-transparent border border-edgreen !text-edgreen hover:!bg-edgreen hover:!text-white"></a>
-                            <a href="about.html"
-                                class="ed-btn !bg-transparent border border-black !text-black hover:!bg-black hover:!text-white">about
-                                us</a> -->
-              </div>
             </div>
 
             <!-- banner image -->
@@ -210,7 +204,7 @@
                 />
 
                 <!-- vectors -->
-                <div>
+                <div id="svg-home-1">
                   <div
                     class="w-[242px] aspect-square rounded-full bg-edgreen opacity-80 blur-[110px] absolute -z-[1] bottom-0 left-[163px]"
                   ></div>
@@ -231,7 +225,7 @@
         </div>
 
         <!-- vector -->
-        <div>
+        <div class="svg-home-2">
           <img
             src="assets/img/banner-2-vector-1.svg"
             alt="vector"
@@ -1579,5 +1573,33 @@
     <script src="assets/js/main.js"></script>
     <!-- <script src="assets/js/header-2.js"></script> -->
     <script src="assets/js/accordion.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const section = document.getElementById("section-home");
+        const svgElements = document.querySelectorAll(
+          "#svg-home-1, .svg-home-2 img"
+        );
+
+        // Mengecek apakah section memiliki background selain 'transparent'
+        const backgroundColor =
+          window.getComputedStyle(section).backgroundColor;
+
+        if (
+          backgroundColor !== "rgba(0, 0, 0, 0)" &&
+          backgroundColor !== "transparent"
+        ) {
+          // Jika ada background, sembunyikan semua elemen SVG
+          svgElements.forEach((svg) => {
+            svg.style.display = "none";
+          });
+        } else {
+          // Jika tidak ada background, tampilkan elemen SVG
+          svgElements.forEach((svg) => {
+            svg.style.display = "block";
+          });
+        }
+      });
+    </script>
   </body>
 </html>
